@@ -1,0 +1,139 @@
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  height: 100%;
+}
+.header-conteiner {
+  position: absolute;
+  width: 1920px;
+  height: 36px;
+  left: 0px;
+  top: 0px;
+  background: #f8f8f8;
+  display: block;
+}
+.map-label {
+  box-sizing: border-box;
+  height: 16px;
+  width: 11.200000762939453px;
+  left: 404px;
+  top: 10px;
+}
+.city {
+  position: absolute;
+  top: 11px;
+  width: 65px;
+  left: 428px;
+  text-align: center;
+  color: #1d1d1b;
+}
+.shop {
+  position: absolute;
+  width: 60px;
+  height: 12px;
+  left: 592px;
+  top: 11px;
+  color: #1d1d1b;
+}
+.buyer {
+  position: absolute;
+  width: 78px;
+  height: 12px;
+  left: 676px;
+  top: 11px;
+  color: #1d1d1b;
+}
+.vector-1 {
+  position: absolute;
+  height: 3px;
+  width: 6px;
+  border-radius: 0px;
+  left: 39%;
+  right: 25%;
+  top: 37.5%;
+  bottom: 37.5%;
+  border: 1px solid #1d1d1b;
+}
+.legal-entities {
+  position: absolute;
+  width: 126px;
+  height: 12px;
+  left: 798px;
+  top: 11px;
+  color: #1d1d1b;
+}
+.number {
+  position: absolute;
+  width: 192px;
+  height: 12px;
+  left: 1308px;
+  top: 11px;
+  color: #696969;
+}
+.list {
+  position: absolute;
+  left: 75px;
+  top: 5px;
+}
+.list-1 {
+  position: absolute;
+  left: 115px;
+  top: 5px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  font-family: Open sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 100%;
+}
+img {
+  position: absolute;
+}
+li {
+  list-style-type: none;
+}
+.main-menu {
+  position: absolute;
+  top: 70px;
+  background-color: #000;
+}
+.logo {
+  position: absolute;
+  left: 400px;
+}
+.header-search {
+  position: absolute;
+  width: 412px;
+  height: 48px;
+  left: 592px;
+  top: 60px;
+}
+.search-input {
+  width: 412px;
+  height: 48px;
+  left: 592px;
+  border: 1px solid #d5d5d5;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.header-search-icon {
+  position: absolute;
+  width: 56px;
+  height: 48px;
+  left: 375px;
+  top: 0px;
+  background: #e0001b;
+}
+.search-logo {
+  position: absolute;
+  left: 69.38%;
+  right: 12.5%;
+  top: 69.38%;
+  bottom: 12.5%;
+
+  border: 1.5px solid #ffffff;
+}
