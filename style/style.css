@@ -124,16 +124,20 @@ li {
   position: absolute;
   width: 56px;
   height: 48px;
-  left: 375px;
+  left: 358px;
   top: 0px;
   background: #e0001b;
+  border-radius: 4px;
 }
 .search-logo {
   position: absolute;
-  left: 69.38%;
-  right: 12.5%;
-  top: 69.38%;
-  bottom: 12.5%;
-
-  border: 1.5px solid #ffffff;
+  left: 28px;
+  top: 25px;
+}
+.search-logo-1 {
+  position: absolute;
+  top: 10px;
+  bottom: 15px;
+  left: 15px;
+  right: 17px;
 }
