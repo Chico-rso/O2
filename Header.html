@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:49492/index.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Header</title>
+  <style type="text/css"></style><link rel="stylesheet" href="./Header_files/style.css"></head>
+  <body>
+    <header class="page-header">
+      <nav class="menu-top">
+        <div class="top-city">
+          <img src="./Header_files/Vector.svg" alt="...">
+          <a href="http://127.0.0.1:49492/index.html#">Москва</a>
+        </div>
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a href="http://127.0.0.1:49492/index.html#"> Магазины</a>
+          </li>
+          <li class="menu-list-item-drop-down">
+            <a href="http://127.0.0.1:49492/index.html#"> Покупателям</a>
+          </li>
+          <li class="menu-list-item-drop-down">
+            <a href="http://127.0.0.1:49492/index.html#"> Юридическим лицам</a>
+          </li>
+        </ul>
+        <div class="phone-number">
+          <p>8-800-999-99-99 (c 03:00 до 22:00)</p>
+        </div>
+      </nav>
+      <div class="conteiner">
+        <div class="menu-middle">
+          <div class="logo">
+            <a class="header-middle-logo" href="http://127.0.0.1:49492/index.html#">
+              <img src="./Header_files/name (1).svg" alt="...">
+            </a>
+          </div>
+          <div class="serch-middle">
+            <input class="input" type="serch" placeholder="Быстрый поиск">
+          </div>
+          <div class="favorit">
+            <button class="favorit-button" type="button">
+              <span>Избранное</span>
+              <img src="./Header_files/Heart.svg" alt="...">
+              <span class="counter-fovorit">3</span>
+            </button>
+          </div>
+          <div class="link-middle">
+            <img src="./Header_files/scales.svg" alt="...">
+            <a class="link" href="http://127.0.0.1:49492/index.html#">Сравнить</a>
+            <img class="basket-img" src="./Header_files/basket.svg" alt="...">
+            <a class="link" href="http://127.0.0.1:49492/index.html#">Корзина</a>
+            <span class="counter-basket">7</span>
+          </div>
+        </div>
+      </div>
+    </header>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
