@@ -1,0 +1,42 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.6016 8.44555H13.4163C13.1202 7.32871 12.429 6.34227 11.4581 5.6827V3.8073C11.4581 3.66438 11.3815 3.53242 11.2574 3.46145C10.1261 2.81457 8.83621 2.47266 7.52734 2.47266C3.37672 2.47262 0 5.84941 0 10C0 14.1506 3.37672 17.5274 7.52738 17.5274H13.8214C17.2283 17.5274 20 14.7557 20 11.3487V8.84398C20 8.62394 19.8216 8.44555 19.6016 8.44555ZM16.6606 10.9122C16.243 12.7745 14.5843 14.1294 12.6332 14.1294C12.1283 14.1294 11.6315 14.0368 11.1652 13.8594C12.278 13.2141 13.0877 12.1472 13.4157 10.9122H16.6606ZM12.7807 9.67883C12.7807 11.3093 11.7897 12.7816 10.2955 13.4032C9.71047 13.0005 9.23926 12.4544 8.92754 11.8227C9.99719 11.7205 10.8366 10.8171 10.8366 9.72109C10.8366 8.72859 10.1481 7.89434 9.22379 7.66957C9.64016 7.06117 10.2129 6.5732 10.8837 6.25914C12.0584 6.99437 12.7807 8.28695 12.7807 9.67883ZM8.30188 7.65223C7.33969 7.84875 6.61355 8.70172 6.61355 9.72109C6.61355 10.6351 7.19742 11.4151 8.01164 11.7083C8.2902 12.461 8.75055 13.134 9.34582 13.6678C9.14867 13.6972 8.94902 13.712 8.74766 13.712C6.52379 13.712 4.71453 11.9027 4.71453 9.67883C4.71453 7.455 6.52379 5.64574 8.74766 5.64574C9.17074 5.64574 9.59074 5.7127 9.99059 5.84219C9.2866 6.28996 8.70395 6.9118 8.30188 7.65223ZM10.0398 9.72113C10.0398 10.4461 9.45004 11.0359 8.72512 11.0359C8.0002 11.0359 7.41039 10.4461 7.41039 9.72113C7.41039 8.99621 8.0002 8.40641 8.72512 8.40641C9.45004 8.40641 10.0398 8.99617 10.0398 9.72113ZM19.2032 11.3487C19.2032 14.3162 16.7889 16.7305 13.8214 16.7305H7.52738C3.81613 16.7305 0.796836 13.7112 0.796836 10C0.796836 6.28879 3.81613 3.26945 7.52738 3.26945C8.62105 3.26945 9.69957 3.53625 10.6613 4.04301V5.24434L10.6614 5.2448C10.0595 4.98508 9.40668 4.84895 8.74766 4.84895C6.08441 4.84895 3.91773 7.01562 3.91773 9.67883C3.91773 12.3421 6.08441 14.5087 8.74766 14.5087C9.24434 14.5087 9.73297 14.4332 10.203 14.2846L10.203 14.285C10.9423 14.705 11.7785 14.9262 12.6333 14.9262C15.0216 14.9262 17.0432 13.2243 17.4743 10.9122H19.2032V11.3487ZM19.2032 10.1154H13.5775V9.24238H19.2032V10.1154Z" fill="#005BFF"/>
+<path d="M14.5421 15.5776H9.28316C9.06312 15.5776 8.88477 15.756 8.88477 15.976C8.88477 16.196 9.06312 16.3744 9.28316 16.3744H14.5421C14.7622 16.3744 14.9405 16.196 14.9405 15.976C14.9405 15.756 14.7622 15.5776 14.5421 15.5776Z" fill="#005BFF"/>
+<path d="M7.8484 15.5776H7.60934C7.3893 15.5776 7.21094 15.756 7.21094 15.976C7.21094 16.196 7.3893 16.3744 7.60934 16.3744H7.8484C8.06844 16.3744 8.2468 16.196 8.2468 15.976C8.24684 15.756 8.0684 15.5776 7.8484 15.5776Z" fill="#005BFF"/>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></svg>

@@ -26,7 +26,7 @@ a {
 .page-header {
     display: block;
     width: 1920px;
-    min-height: 200px;
+    height: 200px;
 }
 
 .menu-top ul {
@@ -203,9 +203,11 @@ a {
 
 .menu-bottom-list {
     display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
     background-color: #f8f8f8;
-    position: absolute;
-    margin-left: 21%;
 }
 
 .bottom-list-text {
