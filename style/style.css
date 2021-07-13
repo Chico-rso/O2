@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 *,
 html {
     margin: 0;
@@ -48,7 +50,7 @@ a {
     background: #f8f8f8;
     height: 36px;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 .menu-list li a {
@@ -58,10 +60,6 @@ a {
     margin-right: 40px;
 }
 
-.menu-top li {
-    display: inline-block;
-    margin-right: 2em;
-}
 
 .top-city a {
     text-decoration: none;
@@ -95,13 +93,19 @@ a {
 }
 
 .phone-number p {
-    font-family: Open sans-serif;
+    font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 100%;
     color: #696969;
     align-items: center;
+}
+
+.phone-number {
+    margin-right: 400px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .logo {
@@ -160,11 +164,11 @@ a {
 }
 
 .middle-img {
-    margin-left: 34px;
+    margin-left: 25px;
 }
 
 .counter-middle {
-    background-color: red;
+    background-color: #E0001B;
     color: #f8f8f8;
     border-radius: 100px;
     width: 17px;
@@ -181,7 +185,7 @@ a {
     position: absolute;
     width: 56px;
     margin-left: -1px;
-    background-color: red;
+    background-color: #E0001B;
     border-style: none;
     right: 0px;
     height: 100%;
@@ -206,26 +210,35 @@ a {
     background-color: #f8f8f8;
     position: absolute;
     margin-left: 21%;
+    border: 1px solid #f8f8f8;
+    border-radius: 5px;
 }
 
 .bottom-list-text {
-    font-family: Open sans-serif;
+    font-family: Open Sans;
     font-style: normal;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 100%;
     color: #0c0c0c;
 }
 
 .bottom-list-item {
-    margin-right: 48px;
+    margin-right: 25px;
     list-style-type: none;
     line-height: 48px;
+
 }
 
 .bottom-list-item:first-child {
-    background-color: red;
+    background-color: #E0001B;
     height: 48px;
     width: 136px;
+    border-radius: 5px 0 0 5px;
+}
+
+.bottom-list-item:first-child .bottom-list-text {
+    color: #fff;
+    padding-left: 10px;
 }
 
 .bottom-list-link {
@@ -266,6 +279,8 @@ a {
 }
 
 .bottom-menu-catalog-item {
+    display: flex;
+    align-items: center;
     width: 332px;
     height: 46px;
     list-style: none;
@@ -285,4 +300,8 @@ a {
     line-height: 19px;
     color: #1D1D1B;
     text-align: center;
+}
+
+.bottom-list-img {
+    padding-left: 10px;
 }
