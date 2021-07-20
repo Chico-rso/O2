@@ -1,0 +1,82 @@
+<header>
+	<div class="header__conteiner">
+		<section class="header__top">
+			<div class="header__top-list">
+				<ul class="header__top-list-menu">
+					<li>
+					{% include '../../assets/svg/Icon-places.svg' %}
+						<a class="header__link" href="#">Москва</a>
+					</li>
+					<li>
+						{% include '../../assets/svg/Icon-delivery.svg' %}
+						<a class="header__link" href="#">Доставка и оплата</a>
+					</li>
+					<li>
+						{% include '../../assets/svg/Icon-address.svg' %}
+						<a class="header__link" href="#">Адрес и часы работы</a>
+					</li>
+				</ul>
+				<ul class="header__top-list-contacts">
+					<li>
+						{% include '../../assets/svg/Icon-mail.svg' %}
+						<a class="header__link" href="#">market@estatut.ru</a>
+					</li>
+					<li>
+						{% include '../../assets/svg/Icon-phone.svg' %}
+						<a class="header__link" href="#">8 (968) 660-65-50</a>
+						{% include '../../assets/svg/Icon-Exclamation point.svg' %}
+					</li>
+				</ul>
+			</div>
+			<div class="border"></div>
+		</section>
+		<section class="header__bottom">
+			<a class="header__burger none" href="#">{% include '../../assets/svg/Icon-burger.svg' %}</a>
+			<div class="header__bottom-wraper">
+			<div class="header__bottom-logo">
+				<a href="#">{% include '../../assets/svg/logo.svg' %}</a>
+			</div>
+			<div class="header__bottom-search">
+				<input type="search" placeholder="Автор, название, ISBN">
+				<button class="header__bottom-search-button">
+					{% include '../../assets/svg/Icon-search.svg' %}
+					{% include '../../assets/svg/Icon-search.svg' %}
+					<span>Искать</span>
+				</button>
+				<div class="header__basket-mobile">
+					<a href="#">{% include '../../assets/svg/Icon-basket.svg' %}</a>
+				</div>
+			</div>
+			<div class="header__bottom-useroption">
+				<ul class="header__bottom-useroption-list">
+					<li>
+                       {% include '../../assets/svg/Icon-postponed.svg' %}
+                       <a class="header__bottom-useroption-link" href="#">Отложено</a>
+					</li>
+					<li>
+						{% include '../../assets/svg/Icon-smail.svg' %}
+						<a class="header__bottom-useroption-link" href="#">Войти</a>
+					</li>
+					<li>
+						{% include '../../assets/svg/Icon-basket.svg' %}
+						<a class="header__bottom-useroption-link" href="#">Корзина</a>
+					</li>
+				</ul>
+			</div>
+			</div>
+			<nav class="header__bottom-navigation">
+				<div class="header__burger">
+					{% include '../../assets/svg/Icon-burger.svg' %}
+				</div>
+				<ul class="header__bottom-navigation-list">
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Авторы</a></li>
+					<li><a href="#">Новинки</a></li>
+					<li><a class="header__bottom-sale-link" href="#">{% include '../../assets/svg/Icon-sale.svg' %}Скидки</a></li>
+					<li><a href="#">Партнёрам</a></li>
+					<li><a href="#">Мы</a></li>
+				</ul>
+			</nav>
+		</section>
+	</div>
+</header>
