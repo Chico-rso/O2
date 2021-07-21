@@ -7,7 +7,7 @@
 .header__top-list
 {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	margin-top: 17px;
 	margin-bottom: 17px;
 	width: 100%;
@@ -19,8 +19,7 @@ svg
 {
 	display: flex;
 	align-items: center;
-	margin-right: 350px;
-
+	margin-left: 114px;
 	li
 	{
 		svg
@@ -44,7 +43,7 @@ svg
 {
 	display: flex;
 	align-items: center;
-	;
+	margin-right: 114px;
 	a
 	{
 		font-style: normal;
@@ -92,14 +91,14 @@ svg
 	display: flex;
 	align-items: center;
 	width: 1366px;
-	// width:100%;
-	margin-left: 50px;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	justify-content: center;
+	justify-content: space-between;
 }
 .header__bottom-search
 {	position: relative;
+	display: flex;
+	margin-left: 114px;
 	input
 	{
      	width: 573px;
@@ -110,6 +109,16 @@ svg
 		box-sizing: border-box;
 		border-radius: 5px;
 		padding-left: 15px;
+	}
+	input::placeholder
+	{
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+		color: rgba(28, 41, 77, 0.5);
+
 	}
 }
 .header__bottom-search-button
@@ -142,29 +151,24 @@ svg
 }
 .header__bottom-useroption
 {
-	display: flex;
-	margin-left: 200px;
+
+
 
 }
 .header__bottom-useroption-list
 {
 	display: flex;
-	li
-	{
-		display: flex;
-		svg
-		{
-			margin-right: 7px;
-		}
-	}
-	a
-	{
-		margin-right: 32px;
-	}
-}
-.header__bottom-logo
-{
-	margin-right: 30px;
+	margin-right: 114px;
+ svg
+ {
+ 	margin-right: 7px;
+ 	margin-left: 32px;
+ }
+  li 
+  {
+  	display: flex;
+  	align-items: center;
+  }
 }
 .header__bottom-useroption-link
 {
@@ -177,7 +181,8 @@ svg
 .header__bottom-navigation
 {
 	display: flex;
-	margin-left: 50px;
+	margin-left: 114px;
+
 }
 .header__bottom-navigation-list
 {
@@ -196,4 +201,8 @@ svg
 .header__burger
 {
 	margin-right: 8px;
+}
+.header__botoom-logo
+{
+	margin-right: 30px;
 }
