@@ -1,4 +1,4 @@
-<header>
+<header class="header">
 	<div class="header__conteiner">
 		<section class="header__top">
 			<div class="header__top-list">
@@ -34,6 +34,9 @@
 			<a class="header__burger none" href="#">{% include '../../assets/svg/Icon-burger.svg' %}</a>
 			<div class="header__bottom-wraper">
 			<div class="header__bottom-search">
+			<div class="header__burger-mobile">
+					{% include '../../assets/svg/Icon-burger.svg' %}
+				</div>
 				<a class="header__bottom-logo" href="#">{% include '../../assets/svg/logo.svg' %}</a>
 				<input type="search" placeholder="Автор, название, ISBN">
 				<button class="header__bottom-search-button">
@@ -56,6 +59,7 @@
 						<a class="header__bottom-useroption-link" href="#">Войти</a>
 					</li>
 					<li>
+					<span>10</span>
 						{% include '../../assets/svg/Icon-basket.svg' %}
 						<a class="header__bottom-useroption-link" href="#">Корзина</a>
 					</li>

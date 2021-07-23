@@ -1,0 +1,247 @@
+.container
+{
+ min-width: 1406px;
+}
+.promo__wraper
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	background-color: #F9F9F9;
+}
+
+/**
+ * slider
+ */
+
+.promo__slider
+{
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    margin-left: 113px;
+    width: 750px;
+    height: 350px;
+    margin-top: 30px;
+    background: #CCFF90;
+	border-radius: 5px;
+    button
+    {
+    	width: 95px;
+    	height: 95px;
+    	border-style: none;
+    	background-color: #fff;
+    }
+
+}
+
+/**
+ * book of the day
+ */
+%font-position-main
+{
+	font-family: Roboto;
+	font-style: normal;
+	position: absolute;
+}
+.promo__bookday
+{
+
+	position: relative;
+	width: 360px;
+	background: #FFFFFF;
+	border-radius: 5px;
+	min-height: 520px;
+	margin-right: 113px;
+	margin-left: 30px;
+	margin-top: 30px;
+	&-timer
+	{
+		top: 25px;
+		right: 20px;
+		width: 68px;
+		height: 25px;
+		padding: 5px;
+		@extend%font-position-main;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 15px;
+		background: rgba(255, 122, 0, 0.15);
+		border-radius: 5px;
+		text-align: center;
+		color: #FF7A00;
+	}
+	h3
+	{
+		position: absolute;
+		top: 22px;
+		left: 20px;
+		margin: 0;
+	}
+	img
+	{
+		width: 167px;
+		height: 250px;
+		position: absolute;
+    	top: 65px;
+    	right: 95px;
+	    left: 95px;
+
+	}
+	.promo__bookday-name
+	{
+		top: 330px;
+		left: 20px;
+		@extend%font-position-main;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 15px;
+		color: rgba(28, 41, 77, 0.5);
+	}
+	.promo__bookday-description
+	{
+		top: 353px;
+		left: 20px;
+		right: 20px;
+		@extend%font-position-main;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 19px;
+		color: #1C294D;
+	}
+	.promo__bookday-author
+	{
+		top: 399px;
+		left: 20px;
+		@extend%font-position-main;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: -0.1px;
+		color: #1C294D;
+		opacity: 0.8;
+	}
+	.promo__bookday-price
+	{
+		top: 422px;
+		left: 20px;
+		@extend%font-position-main;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 20px;
+		color: #1C294D;
+	}
+	.button__bookday
+	{
+		position: absolute;
+		width: 146px;
+		height: 40px;
+		top: 454px;
+		left: 20px;
+		color: #1C294D;
+		border: 1px solid #EEEEEE;
+		box-sizing: border-box;
+		border-radius: 5px;
+		svg
+		{
+			margin-right: 12px;
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 15px;
+			color: #1C294D;
+		}
+	}
+	.bookday__link
+	{
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		top: 454px;
+		left: 175px;
+		background: #FFFFFF;
+		border: 1px solid #EEEEEE;
+		box-sizing: border-box;
+		border-radius: 5px;
+		svg
+		{
+			margin: 10px 14px;
+		}
+	}
+}
+/**
+ * promo-bottom
+ */
+.promo__bottom
+{
+	display: flex;
+	.promo__bottom-delivery
+	{
+		display: flex;
+		position: relative;
+		width: 360px;
+		min-height: 140px;
+		margin-left: 114px;
+		margin-top: 30px;
+		align-items: center;
+		background: #6D378F;
+		border-radius: 5px;
+		h3
+		{
+			width: 199px;
+			margin-left: 25px;
+			margin-right: 13px;
+			font-family: Gosha Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 25px;
+			color: #FFFFFF;
+			z-index: 2;
+		}
+		svg
+		{
+			position: absolute;
+		    left: 13px;
+    		top: 35px;
+		}
+	}
+	.promo__bottom-sale
+	{
+		display: flex;
+		position: relative;
+		align-items: center;
+		justify-content: space-evenly;
+		width: 360px;
+		min-height: 140px;
+		margin-top: 30px;
+		margin-left: 30px;
+		background: #FFD8EF;
+		border-radius: 5px;
+		h3
+		{
+			width: 162px;
+			margin-right: 23px;
+			font-family: Gosha Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 25px;
+			color: rgba(28, 41, 77, 0.8);
+			z-index: 2;
+		}
+		img
+		{
+			width: 125px;
+			margin-right: 25px;
+		}
+		svg
+		{
+			position: absolute;
+			left: 21px;
+    		top: 88px;
+		}
+	}
+}
