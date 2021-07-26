@@ -18,8 +18,9 @@
 .promo__slider
 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
     align-items: center;
+    position: relative;
     margin-left: 113px;
     width: 750px;
     height: 350px;
@@ -28,12 +29,42 @@
 	border-radius: 5px;
     button
     {
-    	width: 95px;
-    	height: 95px;
-    	border-style: none;
     	background-color: #fff;
+    	border-radius: 5px;
+
+    }
+    .promo__slider-button-left
+    {
+    	position: absolute;
+    	top: 50%;
+    	left: 0;
+    	transform: translate(0, -50%);
+    	padding: 11px 16px;
+    	margin-left: 28px;
+    	border-style: none;
+    }
+    .promo__slider-button-right
+    {
+    	position: absolute;
+    	top: 50%;
+    	right: 0;
+    	transform: translate(0, -50%);
+    	padding: 11px 16px;
+    	margin-right: 28px;
+    	border-style: none;
     }
 
+}
+.promo__slider-content
+{
+	li
+	{
+	    display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	height: 100%;
+    	width: 100%;
+	}
 }
 
 /**

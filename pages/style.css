@@ -1057,14 +1057,15 @@ li.L9 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
   margin-left: 113px;
   width: 750px;
   height: 350px;
@@ -1075,10 +1076,50 @@ li.L9 {
 }
 
 .promo__slider button {
-  width: 95px;
-  height: 95px;
-  border-style: none;
   background-color: #fff;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.promo__slider .promo__slider-button-left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 11px 16px;
+  margin-left: 28px;
+  border-style: none;
+}
+
+.promo__slider .promo__slider-button-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 11px 16px;
+  margin-right: 28px;
+  border-style: none;
+}
+
+.promo__slider-content li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 /**
@@ -1315,17 +1356,15 @@ li.L9 {
   top: 88px;
 }
 
-.arrivals__conteiner .arrivals__block1 {
+.arrivals__conteiner .arrivals__book {
   width: 263px;
   min-height: 460px;
   background: #FFFFFF;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
   font-family: Roboto;
   font-style: normal;
 }
 
-.arrivals__conteiner .arrivals__block1 .arrivals__button-buy {
+.arrivals__conteiner .arrivals__book .arrivals__button-buy {
   width: 146px;
   height: 40px;
   -webkit-border-radius: 5px;
@@ -1384,7 +1423,6 @@ li.L9 {
   width: 60px;
   height: 30px;
   margin-right: 138px;
-  border: 1px solid rgba(28, 41, 77, 0.15);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-border-radius: 5px;
@@ -1397,21 +1435,42 @@ li.L9 {
   display: -ms-flexbox;
   display: flex;
   border-style: none;
+  padding: 12px;
 }
 
-.arrivals__header .arrivals__slider-button .arrivals__header-button-left {
-  border-right: 1px solid #E5E5E5;
-  padding-right: 18px;
-  height: 100%;
-  padding-top: 11px;
+.arrivals__header .arrivals__slider-button button:last-child {
+  border: 1px solid #EEEEEE;
+  -webkit-border-radius: 0px 5px 5px 0px;
+  border-radius: 0px 5px 5px 0px;
 }
 
-.arrivals__header .arrivals__slider-button .arrivals__header-button-right {
-  padding-right: 18px;
+.arrivals__header .arrivals__slider-button button:first-child {
+  border-left: 1px solid #EEEEEE;
+  border-top: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  -webkit-border-radius: 5px 0px 0px 5px;
+  border-radius: 5px 0px 0px 5px;
 }
 
 .arrivals__wraper {
-  background-color: #F9F9F9;
+  width: 1140px;
+  min-height: 562px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.arrivals__wraper .arrivals__all-book {
+  display: block;
+  width: 215px;
+  margin: 10px auto;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1C294D;
 }
 
 .arrivals__conteiner {
@@ -1423,35 +1482,43 @@ li.L9 {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 0px 114px;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
 }
 
-.arrivals__conteiner .arrivals__block1 {
+.arrivals__conteiner .arrivals__book {
   position: relative;
   padding-left: 20px;
 }
 
-.arrivals__conteiner .arrivals__block1 .arrivals__book-image1 {
+.arrivals__conteiner .arrivals__book:first-child {
+  padding-right: 15px;
+}
+
+.arrivals__conteiner .arrivals__book:not(:first-child) {
+  border-left: 1px solid #E5E5E5;
+}
+
+.arrivals__conteiner .arrivals__book .arrivals__book-image1 {
   position: relative;
 }
 
-.arrivals__conteiner .arrivals__block1 img {
+.arrivals__conteiner .arrivals__book img {
   margin-top: 25px;
   margin-left: 42px;
   margin-bottom: 15px;
 }
 
-.arrivals__conteiner .arrivals__block1 ul {
+.arrivals__conteiner .arrivals__book ul {
   position: absolute;
   top: 20px;
   left: 0px;
 }
 
-.arrivals__conteiner .arrivals__block1 ul li:first-child {
+.arrivals__conteiner .arrivals__book ul li:first-child {
   width: 86px;
   height: 25px;
   padding: 5px;
@@ -1466,7 +1533,7 @@ li.L9 {
   color: #AC8EE3;
 }
 
-.arrivals__conteiner .arrivals__block1 ul li:last-child {
+.arrivals__conteiner .arrivals__book ul li:last-child {
   width: 54px;
   height: 25px;
   padding: 5px;
@@ -1480,7 +1547,12 @@ li.L9 {
   color: #FF4F52;
 }
 
-.arrivals__conteiner .arrivals__block1 .arrivals__block1-name {
+.arrivals__conteiner .arrivals__book ul li.new {
+  color: #3DC47E;
+  background-color: #E2F6EC;
+}
+
+.arrivals__conteiner .arrivals__book .arrivals__book-name {
   display: block;
   font-weight: normal;
   margin-bottom: 8px;
@@ -1489,7 +1561,7 @@ li.L9 {
   color: rgba(28, 41, 77, 0.5);
 }
 
-.arrivals__conteiner .arrivals__block1 .arrivals__block1-description {
+.arrivals__conteiner .arrivals__book .arrivals__book-description {
   display: block;
   margin-bottom: 8px;
   font-weight: 500;
@@ -1498,7 +1570,7 @@ li.L9 {
   color: #1C294D;
 }
 
-.arrivals__conteiner .arrivals__block1 .arrivals__block1-auhtor {
+.arrivals__conteiner .arrivals__book .arrivals__book-auhtor {
   display: block;
   margin-bottom: 8px;
   font-weight: normal;
@@ -1507,7 +1579,7 @@ li.L9 {
   color: rgba(28, 41, 77, 0.5);
 }
 
-.arrivals__conteiner .arrivals__block1 .arrivals__block1-price {
+.arrivals__conteiner .arrivals__book .arrivals__book-price {
   display: block;
   margin-bottom: 10px;
   font-family: Roboto;
@@ -1518,12 +1590,29 @@ li.L9 {
   color: #1C294D;
 }
 
-.arrivals__conteiner .arrivals__block1 .arrivals__price-conteiner .arrivals__block1-newprice {
+.arrivals__conteiner .arrivals__book .arrivals__price-conteiner {
+  margin: 0 0 5px;
+}
+
+.arrivals__conteiner .arrivals__book .arrivals__price-conteiner span:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  top: 6.43px;
+  -webkit-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  width: 41px;
+  height: 1px;
+  background-color: #FD3A3A;
+}
+
+.arrivals__conteiner .arrivals__book .arrivals__price-conteiner .arrivals__book-newprice {
   display: inline-block;
   color: #FD3A3A;
 }
 
-.arrivals__conteiner .arrivals__block1 .arrivals__price-conteiner .arrivals__block1-litprice {
+.arrivals__conteiner .arrivals__book .arrivals__price-conteiner .arrivals__book-litprice {
+  position: relative;
   color: #1C294D80;
   font-family: Roboto;
   font-style: normal;
@@ -1532,7 +1621,7 @@ li.L9 {
   line-height: 15px;
 }
 
-.arrivals__conteiner .arrivals__block1 .arrivals__price-conteiner .arrivals__block1-profit {
+.arrivals__conteiner .arrivals__book .arrivals__price-conteiner .arrivals__book-profit {
   color: #0DB98C;
   font-family: Roboto;
   font-style: normal;
@@ -1541,7 +1630,7 @@ li.L9 {
   line-height: 15px;
 }
 
-.arrivals__conteiner .arrivals__block1 .arrivals__block1-star {
+.arrivals__conteiner .arrivals__book .arrivals__book-star {
   display: inline-block;
   margin-bottom: 10px;
   width: 52px;
@@ -1549,9 +1638,10 @@ li.L9 {
   background: rgba(251, 192, 45, 0.15);
   -webkit-border-radius: 5px;
   border-radius: 5px;
+  text-align: center;
 }
 
-.arrivals__conteiner .arrivals__block1 .arrivals__block1-star span {
+.arrivals__conteiner .arrivals__book .arrivals__book-star span {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -1561,24 +1651,30 @@ li.L9 {
   color: #E0A423;
 }
 
-.arrivals__conteiner .arrivals__block1 .arrivals__block1-recommendation {
+.arrivals__conteiner .arrivals__book .arrivals__book-recommendation {
   display: inline-block;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   width: 144px;
   height: 25px;
   background: rgba(121, 134, 203, 0.15);
   -webkit-border-radius: 5px;
   border-radius: 5px;
+  text-align: center;
+  padding-left: 12px;
 }
 
-.arrivals__conteiner .arrivals__block1 .arrivals__block1-recommendation span {
+.arrivals__conteiner .arrivals__book .arrivals__book-recommendation span {
   font-weight: 500;
   font-size: 12px;
   line-height: 12px;
   color: #7986CB;
 }
 
-.arrivals__conteiner .arrivals__block1 .arrivals__bookmark {
+.arrivals__conteiner .arrivals__book .arrivals__button-buy span {
+  padding-left: 12px;
+}
+
+.arrivals__conteiner .arrivals__book .arrivals__bookmark {
   display: inline-block;
   position: absolute;
   right: 50px;

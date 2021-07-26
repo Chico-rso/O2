@@ -15,7 +15,7 @@
 			</div>
 		</div>
 		<div class="arrivals__conteiner">
-			 <div class="arrivals__block1">
+			{#  <div class="arrivals__book">
 				<div class="arrivals__book-image1">
 				<ul>
 					<li>Бестселлер</li>
@@ -23,15 +23,15 @@
 				</ul>
 				<img src="./img/image 142.png" alt="image">
 				</div>
-				<span class="arrivals__block1-name">Корпоративное право</span>
-				<span class="arrivals__block1-description">Инвестирование: способы, риски, субъекты : монография</span>
-				<span class="arrivals__block1-auhtor">Майфат А.В.</span>
-				<span class="arrivals__block1-price">4 450 ₽ </span>
-				<span class="arrivals__block1-star">
+				<span class="arrivals__book-name">Корпоративное право</span>
+				<span class="arrivals__book-description">Инвестирование: способы, риски, субъекты : монография</span>
+				<span class="arrivals__book-auhtor">Майфат А.В.</span>
+				<span class="arrivals__book-price">4 450 ₽ </span>
+				<span class="arrivals__book-star">
 					{% include '../../assets/svg/stars.svg' %}
 					<span>4.9</span>
 				</span>
-				<span class="arrivals__block1-recommendation">
+				<span class="arrivals__book-recommendation">
 					{% include '../../assets/svg/like.svg' %}
 					<span>89% рекомендуют</span>
 				</span>
@@ -40,24 +40,26 @@
 					<span class="promo__bookday-basket">В корзину</span>
 				</button>
 				<a class="arrivals__bookmark" href="#">
+				{% include '../../assets/svg/Icon-postponed.svg' %}
 				</a>
-			</div>
-			<div class="arrivals__block1">
+			</div> #}
+			{% include '../../blocks/catalog-item/catalog-item.twig' %}
+			<div class="arrivals__book">
 				<div class="arrivals__book-image1">
-				<ul class="new">
-					<li>Новинка</li>
+				<ul>
+					<li class="new">Новинка</li>
 				</ul>
 				<img src="./img/image 140.png" alt="image">
 				</div>
-				<span class="arrivals__block1-name">Договорное право</span>
-				<span class="arrivals__block1-description">Договор коммерческой концессии (франчайзинг). Граж...</span>
-				<span class="arrivals__block1-auhtor">Багдасарян А.Ф.</span>
-				<span class="arrivals__block1-price">372 ₽</span>
-				<span class="arrivals__block1-star">
+				<span class="arrivals__book-name">Договорное право</span>
+				<span class="arrivals__book-description">Договор коммерческой концессии (франчайзинг). Граж...</span>
+				<span class="arrivals__book-auhtor">Багдасарян А.Ф.</span>
+				<span class="arrivals__book-price">372 ₽</span>
+				<span class="arrivals__book-star">
 					{% include '../../assets/svg/stars.svg' %}
 					<span>4.9</span>
 				</span>
-				<span class="arrivals__block1-recommendation">
+				<span class="arrivals__book-recommendation">
 					{% include '../../assets/svg/like.svg' %}
 					<span>89% рекомендуют</span>
 				</span>
@@ -69,23 +71,23 @@
 					{% include '../../assets/svg/Icon-postponed.svg' %}
 				</a>
 			</div>
-			<div class="arrivals__block1">
+			<div class="arrivals__book">
 				<div class="arrivals__book-image1">
 					<img src="./img/image 145.png" alt="image">
 				</div>
-				<span class="arrivals__block1-name">Конкурентное право</span>
-				<span class="arrivals__block1-description">Договор коммерческой концессии (франчайзинг). Граж...</span>
-				<span class="arrivals__block1-auhtor">Башлаков-Николаев И.В.</span>
+				<span class="arrivals__book-name">Конкурентное право</span>
+				<span class="arrivals__book-description">Договор коммерческой концессии (франчайзинг). Граж...</span>
+				<span class="arrivals__book-auhtor">Башлаков-Николаев И.В.</span>
 				<div class="arrivals__price-conteiner">
-				<span class="arrivals__block1-redprice">984 ₽</span>
-				<span class="arrivals__block1-litprice">1 284 ₽</span>
-				<span class="arrivals__block1-profit">Выгода 300 ₽</span>
+					<span class="arrivals__book-redprice">984 ₽</span>
+					<span class="arrivals__book-litprice">1 284 ₽</span>
+					<span class="arrivals__book-profit">Выгода 300 ₽</span>
 				</div>
-				<span class="arrivals__block1-star">
+				<span class="arrivals__book-star">
 					{% include '../../assets/svg/stars.svg' %}
 					<span>4.9</span>
 				</span>
-				<span class="arrivals__block1-recommendation">
+				<span class="arrivals__book-recommendation">
 					{% include '../../assets/svg/like.svg' %}
 					<span>89% рекомендуют</span>
 				</span>
@@ -97,7 +99,7 @@
 					{% include '../../assets/svg/Icon-postponed.svg' %}
 				</a>
 			</div>
-			<div class="arrivals__block1">
+			{# <div class="arrivals__book">
 				<div class="arrivals__book-image1">
 					<ul>
 						<li>Бестселлер</li>
@@ -105,15 +107,15 @@
 					</ul>
 						<img src="./img/image 142.png" alt="image">
 				</div>
-				<span class="arrivals__block1-name">Корпоративное право</span>
-				<span class="arrivals__block1-description">Инвестирование: способы, риски, субъекты : монография</span>
-				<span class="arrivals__block1-auhtor">Майфат А.В.</span>
-				<span class="arrivals__block1-price">4 450 ₽ </span>
-				<span class="arrivals__block1-star">
+				<span class="arrivals__book-name">Корпоративное право</span>
+				<span class="arrivals__book-description">Инвестирование: способы, риски, субъекты : монография</span>
+				<span class="arrivals__book-auhtor">Майфат А.В.</span>
+				<span class="arrivals__book-price">4 450 ₽ </span>
+				<span class="arrivals__book-star">
 					{% include '../../assets/svg/stars.svg' %}
 					<span>4.9</span>
 				</span>
-				<span class="arrivals__block1-recommendation">
+				<span class="arrivals__book-recommendation">
 					{% include '../../assets/svg/like.svg' %}
 					<span>89% рекомендуют</span>
 				</span>
@@ -124,8 +126,10 @@
 				<a class="arrivals__bookmark" href="#">
 					{% include '../../assets/svg/Icon-postponed.svg' %}
 				</a>
-			</div>
+			</div> #}
+			{% include '../../blocks/catalog-item/catalog-item.twig' %}
 		</div>
+		<a class="arrivals__all-book" href="#">Показать все книги раздела</a>
 	</div>
 		</div>
 </section>
