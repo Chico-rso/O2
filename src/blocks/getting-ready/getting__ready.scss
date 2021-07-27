@@ -164,7 +164,7 @@
 				color: #FF4F52;
 
 			}
-			li.new
+			li .new
 			{
 				color: #3DC47E;
 				background-color: #E2F6EC;
@@ -178,7 +178,7 @@
 			margin-bottom: 8px;
 			font-size: 12px;
 			line-height: 15px;
-			color: rgba(28, 41, 77, 0.5);
+			color: rgba(28, 41, 77, 05);
 		}
 		.getting__book-description
 		{
@@ -196,7 +196,7 @@
 			font-weight: normal;
 			font-size: 12px;
 			line-height: 15px;
-			color: rgba(28, 41, 77, 0.5);
+			color: rgba(28, 41, 77, 05);
 		}
 		.getting__book-price
 		{
@@ -212,11 +212,12 @@
 		.getting__price-conteiner
 		{
 				margin: 0 0 5px;
+
 				span:nth-child(2)::before
 				{
 					content: '';
 					position: absolute;
-					top: 6.43px;
+					top: 643px;
 					transform: rotate(-5deg);
 					width: 41px;
 					height: 1px;
@@ -260,7 +261,7 @@
 			margin-bottom: 10px;
 			width: 52px;
 			height: 25px;
-			background: rgba(#FBC02D, 0.15);
+			background: rgba(251, 192, 45, 0.15);
 			border-radius: 5px;
 			text-align: center;
 			span
@@ -280,7 +281,7 @@
 			margin-bottom: 10px;
 			width: 144px;
 			height: 25px;
-			background:rgba(#7986CB, 0.15);
+			background:rgba(121, 134, 203, 0.15);
 			border-radius: 5px;
 			text-align: center;
 			padding-left: 12px;
