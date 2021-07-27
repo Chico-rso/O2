@@ -1,0 +1,139 @@
+.footer__top
+{
+	max-width: 1366px;
+	background-color: rgba(40, 47, 54, 0.04);
+}
+.footer__top-items
+{
+	max-width: 1140px;
+	margin: 0 auto;
+	margin-bottom: 45px;
+	min-height: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.footer__top-logo
+	{
+		margin-right: 102px;
+	}
+	.footer__top-input
+	{
+		position: relative;
+		width: 443px;
+		height: 40px;
+	}
+	.footer__input
+	{
+		width: 443px;
+		height: 40px;
+		padding-left: 15px;
+		background: #FFFFFF;
+		border: 1px solid rgba(40, 47, 54, 0.15);
+		box-sizing: border-box;
+		border-radius: 5px;
+	}
+	.footer__input::placeholder
+	{
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+		color: rgba(40, 47, 54, 0.5);
+	}
+	.footer__button
+	{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 50px;
+		height: 40px;
+		background-color: #FF5C00;
+		border-style: none;
+		border-radius: 0 5px 5px 0;
+	}
+}
+/**
+ * footer-middle
+ */
+.footer__nav-list
+{
+	display: flex;
+	margin-bottom: 45px;
+	margin-left: 113px;
+	.footer__nav-items
+	{
+		h3
+		{
+			width: 165px;
+			margin: 0;
+			margin-bottom: 24px;
+			margin-right: 30px;
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 20px;
+			color: #1C294D;
+		}
+		span
+		{
+			display: block;
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 15px;
+			color: rgba(40, 47, 54, 0.5);
+		}
+		a
+		{
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 20px;
+			color: rgba(40, 47, 54, 0.8);
+		}
+		li
+		{
+			padding-bottom: 15px;
+		}
+	}
+}
+/**
+ *. footer__bottom
+ */
+.footer__bottom-nav
+{
+	max-width: 1140px;
+	min-height: 105px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 1px solid rgba(40, 47, 54, 0.15);
+	span
+	{
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+		color: rgba(28, 41, 77, 0.8);
+	}
+	span:first-child
+	{
+		margin-right: 208px;
+		color: rgba(28, 41, 77, 0.5);
+	}
+	a
+	{
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+		color: rgba(28, 41, 77, 0.8);
+	}
+}
