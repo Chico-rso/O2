@@ -795,10 +795,15 @@ li.L9 {
  *  Header-bottom
  */
 
-.none,
-.header__basket-mobile,
-.header__burger-mobile,
-.header__search-mobile {
+.none {
+  display: none;
+}
+
+.header__basket-mobile {
+  display: none;
+}
+
+.header__burger-mobile {
   display: none;
 }
 
@@ -1007,14 +1012,6 @@ li.L9 {
 
 .header__bottom-logo {
   margin-right: 30px;
-}
-
-.header__search-mobile {
-  display: none;
-}
-
-.promotions--mobile {
-  display: none;
 }
 
 .promo__wraper {
@@ -1383,7 +1380,7 @@ li.L9 {
   -ms-flex-align: center;
   align-items: center;
   height: 60px;
-  width: 100%;
+  width: 1140px;
   margin: 0 auto;
   background-color: #fff;
 }
@@ -1836,7 +1833,7 @@ li.L9 {
   -ms-flex-align: center;
   align-items: center;
   height: 60px;
-  width: 100%;
+  width: 1140px;
   margin: 0 auto;
   background-color: #fff;
 }
@@ -2172,37 +2169,32 @@ li.L9 {
 }
 
 .benefits__item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 21px 10px 9px 0;
-  padding-left: 89px;
-  width: calc(100% / 4 - 23px);
+  position: relative;
+  text-align: center;
+  width: 263px;
   height: 150px;
   background-color: #fff;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background-repeat: no-repeat;
-  background-position-y: 50%;
 }
 
 .benefits__item h2 {
+  position: absolute;
+  top: 42px;
+  right: 25px;
   padding-bottom: 0px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 14px;
+  line-height: 25px;
   color: #1C294D;
-  margin: 0 0 3px;
 }
 
 .benefits__item span {
+  position: absolute;
+  bottom: 42px;
+  right: 34px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -2212,15 +2204,9 @@ li.L9 {
 }
 
 .benefits__item img {
-  height: 100%;
-  max-height: 55px;
-}
-
-.benefits__item .benefits__item-wrap {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  position: absolute;
+  left: 2px;
+  top: 29px;
 }
 
 .news__wraper {
@@ -2531,10 +2517,10 @@ li.L9 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -2592,441 +2578,15 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-@media (max-width: 1100px) {
-  .container {
-    max-width: 1024px;
-  }
-
-  .promotions--mobile {
-    display: none;
-  }
-
-  .container {
-    max-width: 1024px;
-  }
-
-  .promo__wraper-slider-block {
-    width: 60%;
-  }
-
-  .promo__wraper-slider-block .promo__bottom-delivery {
-    width: 50%;
-  }
-
-  .promo__wraper-slider-block .promo__bottom-delivery h3 {
-    width: 50%;
-  }
-
-  .promo__wraper-slider-block .promo__bottom-delivery img {
-    width: 50%;
-  }
-
-  .promo__wraper-slider-block .promo__bottom-sale {
-    width: 50%;
-  }
-
-  .promo__wraper-slider-block .promo__bottom-sale h3 {
-    width: 50%;
-  }
-
-  .promo__wraper-slider-block .promo__bottom-sale img {
-    width: 50%;
-  }
-
-  .promo__slider {
-    width: 100%;
-  }
-
-  .promo__bookday {
-    width: 37%;
-  }
-
-  .promo__bookday img {
-    left: 100px;
-  }
-
-  .container {
-    max-width: 1024px;
-  }
-
-  .container {
-    max-width: 1024px;
-  }
-
-  .send__email-input {
-    width: 360px;
-  }
-
-  .send__email-button {
-    width: 100px;
-  }
-
-  .send__email-text {
-    font-size: 16px;
-  }
-
-  .container {
-    max-width: 1024px;
-  }
-
-  .container {
-    max-width: 1024px;
-  }
-
-  .benefits__item {
-    width: calc(100% / 4);
-  }
-
-  .benefits__item span {
-    right: 18px;
-  }
-
-  .benefits__item h2 {
-    right: 10px;
-  }
-
-  .news__item:last-child {
-    display: none;
-  }
-
-  .news__list {
-    padding-top: 0;
-  }
-
-  .container {
-    max-width: 1024px;
-  }
-
-  .footer__bottom-nav span:first-child {
-    margin-right: 50px;
-  }
-}
-
 @media (max-width: 992px) {
   .container {
     max-width: 768px;
   }
 
+  .promo__bookday,
   .header__bottom-useroption,
   .header__top-list-menu {
     display: none;
-  }
-
-  .header__bottom-search {
-    width: 100%;
-  }
-
-  .header__bottom-search input {
-    width: 55.4%;
-  }
-
-  .header__bottom-search-button {
-    right: 33.7%;
-    width: 12%;
-  }
-
-  .promotions--mobile {
-    display: none;
-  }
-
-  .container {
-    max-width: 768px;
-  }
-
-  .promo__bookday img {
-    left: 50px;
-  }
-
-  .promo__bottom .promo__bottom-delivery h3 {
-    margin-left: 14px;
-    margin-right: -8px;
-    font-size: 15px;
-  }
-
-  .promo__bottom .promo__bottom-delivery svg {
-    top: 18px;
-    left: 2px;
-  }
-
-  .promo__bottom .promo__bottom-sale h3 {
-    font-size: 15px;
-  }
-
-  .promo__bottom .promo__bottom-sale svg {
-    left: 0px;
-    top: 103px;
-  }
-
-  .container {
-    max-width: 768px;
-  }
-
-  .arrivals__conteiner .arrivals__book:last-child {
-    display: none;
-  }
-
-  .arrivals__conteiner .arrivals__book img {
-    margin-left: 30px;
-  }
-
-  .container {
-    max-width: 768px;
-  }
-
-  .send__email-text {
-    padding-left: 20px;
-  }
-
-  .send__email-text svg {
-    left: 67px;
-  }
-
-  .send__email-input {
-    width: 40%;
-  }
-
-  .send__email-button {
-    width: 18%;
-    margin-right: 20px;
-  }
-
-  .container {
-    max-width: 768px;
-  }
-
-  .getting__conteiner .getting__book:last-child {
-    display: none;
-  }
-
-  .getting__conteiner .getting__book img {
-    margin-left: 30px;
-  }
-
-  .container {
-    max-width: 768px;
-  }
-
-  .benefits__list {
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .benefits__item {
-    width: 48%;
-  }
-
-  .news__list .news__item:not(:last-child) {
-    margin-right: 0;
-    padding-right: 0;
-  }
-
-  .news__list .news__item:not(:nth-last-child(2)) {
-    margin-right: 35px;
-    border-right: 1px solid rgba(28, 41, 77, 0.15);
-    padding-right: 35px;
-  }
-
-  .container {
-    max-width: 768px;
-  }
-
-  .footer__top-input {
-    margin-right: 20px;
-  }
-
-  .footer__nav-list {
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .footer__bottom-nav span {
-    font-size: 12px;
-  }
-
-  .footer__bottom-nav span:last-child {
-    display: none;
-  }
-
-  .footer__bottom-nav a {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 767px) {
-  .container {
-    max-width: 425px;
-  }
-
-  .header__top {
-    display: none;
-  }
-
-  .header__bottom-search button,
-  .header__bottom-search input {
-    display: none;
-  }
-
-  .header__burger-mobile {
-    display: block;
-    margin-right: 18px;
-    margin-left: 23px;
-  }
-
-  .header__search-mobile {
-    display: block;
-    width: 55%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  .header__search-mobile input {
-    display: block;
-    position: relative;
-    width: 195px;
-    height: 40px;
-  }
-
-  .header__search-mobile a {
-    position: absolute;
-    top: 32px;
-    right: 66px;
-  }
-
-  .header__basket-mobile {
-    display: block;
-    position: relative;
-    margin-top: 26px;
-    margin-bottom: 25px;
-  }
-
-  .header__basket-mobile span {
-    top: -10px;
-    right: -11px;
-    position: absolute;
-    padding: 2px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 16px;
-    text-align: center;
-    color: #FFFFFF;
-    background: #FF7A00;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-  }
-
-  .header__bottom-search {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .header__bottom-logo {
-    margin-top: 17px;
-    margin-bottom: 18px;
-  }
-
-  .header__bottom-navigation {
-    display: none;
-  }
-
-  .promotions {
-    display: none;
-  }
-
-  .promotions--mobile {
-    display: block;
-  }
-
-  .promo__wraper {
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-
-  .promo__wraper .promo__wraper-slider-block {
-    width: 100%;
-  }
-
-  .promo__wraper .promo__wraper-slider-block .promo__slider {
-    width: 100%;
-    height: 175px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-  }
-
-  .promo__wraper .promo__wraper-slider-block .promo__slider-content img {
-    width: 57%;
-  }
-
-  .promo__wraper .promo__wraper-slider-block .promo__slider-buttons {
-    display: none;
-  }
-
-  .promo__wraper .promo__bookday {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 10px;
-  }
-
-  .promo__wraper .promo__bookday img {
-    left: 50%;
-    -webkit-transform: translate(-50%, 0px);
-    -ms-transform: translate(-50%, 0px);
-    transform: translate(-50%, 0px);
-  }
-
-  .promo__wraper .promo__bottom {
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-
-  .promo__wraper .promo__bottom .promo__bottom-delivery {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 10px;
-  }
-
-  .promo__wraper .promo__bottom .promo__bottom-delivery h3 {
-    width: 57%;
-    font-size: 20px;
-  }
-
-  .promo__wraper .promo__bottom .promo__bottom-delivery img {
-    width: 30%;
-    height: 75%;
-  }
-
-  .promo__wraper .promo__bottom .promo__bottom-delivery svg {
-    top: 33px;
-    left: 0;
-  }
-
-  .promo__wraper .promo__bottom .promo__bottom-sale {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 10px;
-  }
-
-  .promo__wraper .promo__bottom .promo__bottom-sale h3 {
-    width: 57%;
-    font-size: 20px;
-  }
-
-  .promo__wraper .promo__bottom .promo__bottom-sale img {
-    width: 30%;
-  }
-
-  .promo__wraper .promo__bottom .promo__bottom-sale svg {
-    top: 83px;
-    left: 33px;
   }
 }
 

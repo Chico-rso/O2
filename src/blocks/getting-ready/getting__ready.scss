@@ -29,7 +29,7 @@
 	justify-content: space-between;
 	align-items: center;
 	height: 60px;
-	width: 1140px;
+	width: 100%;
 	margin: 0 auto;
 	background-color: #fff;
 	h2
@@ -83,7 +83,7 @@
 }
 .getting__wraper
 {
-	width: 1140px;
+	width: 100%;
 	min-height: 562px;
 	margin: 0 auto;
 	margin-bottom: 30px;
@@ -92,7 +92,7 @@
 	.getting__all-book
 	{
 		display: block;
-		width: 215px;
+		width: 188px;
 		margin: 10px auto;
 		font-family: Roboto;
 		font-style: normal;
@@ -106,7 +106,7 @@
 {
 	display: flex;
 	align-items: flex-start;
-	justify-content: space-around;
+	justify-content: space-between;
 	border-top: 1px solid #E5E5E5;
 	border-bottom: 1px solid #E5E5E5;
 
@@ -114,7 +114,7 @@
 	{
 		position: relative;
 		padding-left: 20px;
-		&:first-child{padding-right: 15px;}
+		&:first-child{padding-right: 20px;}
 		&:not(:first-child)
 		{
 			border-left: 1px solid #E5E5E5;
@@ -130,7 +130,7 @@
 		{
 			margin-top: 25px;
 			margin-left: 42px;
-			margin-bottom: 15px;
+			margin-bottom: 9px;
 		}
 		ul
 		{
@@ -166,8 +166,9 @@
 				color: #FF4F52;
 
 			}
-			li .new
+			li.new
 			{
+				width: 70px;
 				color: #3DC47E;
 				background-color: #E2F6EC;
 			}
@@ -177,15 +178,16 @@
 			display: block;
 			// margin-left: 20px;
 			font-weight: normal;
-			margin-bottom: 8px;
+			margin-bottom: 7px;
 			font-size: 12px;
 			line-height: 15px;
-			color: rgba(28, 41, 77, 05);
+			color: rgba(28, 41, 77, 0.5);
 		}
 		.getting__book-description
 		{
 			display: block;
 			margin-bottom: 8px;
+			width: 92%;
 			font-weight: 500;
 			font-size: 14px;
 			line-height: 19px;
@@ -198,7 +200,7 @@
 			font-weight: normal;
 			font-size: 12px;
 			line-height: 15px;
-			color: rgba(28, 41, 77, 05);
+			color: rgba(28, 41, 77, 0.5);
 		}
 		.getting__book-price
 		{
@@ -214,12 +216,11 @@
 		.getting__price-conteiner
 		{
 				margin: 0 0 5px;
-
 				span:nth-child(2)::before
 				{
 					content: '';
 					position: absolute;
-					top: 643px;
+					top: 6.43px;
 					transform: rotate(-5deg);
 					width: 41px;
 					height: 1px;
@@ -234,7 +235,6 @@
 				font-weight: bold;
 				font-size: 18px;
 				line-height: 20px;
-
 			}
 			.getting__book-litprice
 			{
@@ -263,7 +263,7 @@
 			margin-bottom: 10px;
 			width: 52px;
 			height: 25px;
-			background: rgba(251, 192, 45, 0.15);
+			background: rgba(#FBC02D, 0.15);
 			border-radius: 5px;
 			text-align: center;
 			span
@@ -283,10 +283,10 @@
 			margin-bottom: 10px;
 			width: 144px;
 			height: 25px;
-			background:rgba(121, 134, 203, 0.15);
+			background:rgba(#7986CB, 0.15);
 			border-radius: 5px;
 			text-align: center;
-			padding-left: 12px;
+			padding-left: 13px;
 			span
 			{
 				font-weight: 500;
@@ -297,17 +297,28 @@
 		}
 		.getting__button-buy
 		{
+			position: relative;
+
 			@extend %button_property;
+
 			span
 			{
-				padding-left: 12px;
+				position: absolute;
+				top: 14px;
+				left: 54px;
+			}
+			svg
+			{
+				position: absolute;
+				top: 14px;
+				left: 25px;
 			}
 		}
 		.getting__bookmark
 		{
 			display: inline-block;
 			position: absolute;
-			right: 50px;
+			right: 47px;
 			width: 40px;
 		    height: 40px;
 		    padding: 11px 14px;
@@ -318,3 +329,31 @@
 	}
 
 }
+@media (max-width: 1100px)
+{
+	.container
+	{
+		max-width: 1024px;
+	}
+}
+@media (max-width: 992px)
+ {
+ 	.container
+ 	{
+ 		max-width: 768px;
+ 	}
+ 	.getting__conteiner
+ 	{
+	 	.getting__book:last-child
+	 	{
+	 		display: none;
+		}
+		.getting__book
+		{
+			img
+			{
+			    margin-left: 30px;
+			}
+		}
+	}
+ }
