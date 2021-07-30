@@ -24,7 +24,6 @@
     position: relative;
     width: 750px;
     height: 350px;
-    margin-top: 45px;
     background: #CCFF90;
 	border-radius: 5px;
     button
@@ -36,6 +35,8 @@
     .promo__slider-button-left
     {
     	position: absolute;
+    	width: 40px;
+    	height: 40px;
     	top: 50%;
     	left: 0;
     	transform: translate(0, -50%);
@@ -46,6 +47,8 @@
     .promo__slider-button-right
     {
     	position: absolute;
+    	width: 40px;
+    	height: 40px;
     	top: 50%;
     	right: 0;
     	transform: translate(0, -50%);
@@ -76,21 +79,28 @@
 {
 	font-family: Roboto;
 	font-style: normal;
-	position: absolute;
 }
 .promo__bookday
 {
-
 	position: relative;
-	width: 360px;
 	background: #FFFFFF;
 	border-radius: 5px;
-	min-height: 520px;
-	margin-top: 42px;
+	margin-left: 30px;
+	.promo__bookday-top
+	{
+	    display: flex;
+	    justify-content: space-between;
+	    margin-right: 20px;
+	    margin-left: 20px;
+	    margin-top: 21px;
+	}
+	.promo__bookday-bottom
+	{
+		display: flex;
+		flex-direction: column;
+	}
 	&-timer
 	{
-		top: 25px;
-		right: 20px;
 		width: 68px;
 		height: 25px;
 		padding: 5px;
@@ -105,26 +115,20 @@
 	}
 	h3
 	{
-		position: absolute;
-		top: 22px;
-		left: 20px;
 		margin: 0;
 	}
 	img
 	{
+		margin: 20px auto 15px auto;
 		width: 167px;
 		height: 250px;
-		position: absolute;
-    	top: 68px;
-    	right: 95px;
-	    left: 95px;
 
 	}
 	.promo__bookday-name
 	{
-		top: 334px;
-		left: 20px;
 		@extend%font-position-main;
+		margin-left: 20px;
+		margin-bottom: 8px;
 		font-weight: normal;
 		font-size: 12px;
 		line-height: 15px;
@@ -132,10 +136,9 @@
 	}
 	.promo__bookday-description
 	{
-		top: 355px;
-		left: 20px;
-		right: 20px;
 		@extend%font-position-main;
+		margin-left: 20px;
+		margin-bottom: 8px;
 		font-weight: 500;
 		font-size: 14px;
 		line-height: 19px;
@@ -143,9 +146,9 @@
 	}
 	.promo__bookday-author
 	{
-		top: 403px;
-		left: 20px;
 		@extend%font-position-main;
+		margin-left: 20px;
+		margin-bottom: 8px;
 		font-weight: normal;
 		font-size: 12px;
 		line-height: 15px;
@@ -155,21 +158,24 @@
 	}
 	.promo__bookday-price
 	{
-		top: 426px;
-		left: 20px;
 		@extend%font-position-main;
+		margin-left: 20px;
+		margin-bottom: 12px;
 		font-weight: bold;
 		font-size: 18px;
 		line-height: 20px;
 		color: #1C294D;
 	}
+	.button__bookday-wraper
+	{
+		display: flex;
+	}
 	.button__bookday
 	{
-		position: absolute;
 		width: 146px;
 		height: 40px;
-		top: 457px;
-		left: 20px;
+		margin-left: 20px;
+		margin-right: 10px;
 		border: 1px solid #EEEEEE;
 		box-sizing: border-box;
 		border-radius: 5px;
@@ -189,15 +195,13 @@
 	}
 	.bookday__link
 	{
-		position: absolute;
 		width: 40px;
 		height: 40px;
-		top: 456px;
-		left: 175px;
 		background: #FFFFFF;
 		border: 1px solid #EEEEEE;
 		box-sizing: border-box;
 		border-radius: 5px;
+		display: inline-block;
 		svg
 		{
 			margin: 10px 14px;
@@ -284,13 +288,10 @@
 	{
 		display: none;
 	}
-	.container
-	{
-		max-width: 1024px;
-	}
 	.promo__wraper-slider-block
 	{
 		width: 60%;
+
 		.promo__bottom-delivery
 		{
 			width: 50%;
@@ -335,18 +336,6 @@
 	{
 		display: none;
 	}
-	.container
- 	{
- 		max-width: 768px;
- 	}
- 	.promo__bookday
- 	{
- 		img
- 		{
- 			left: 50px;
- 		}
- 	}
-
  	.promo__bottom
  	{
  		.promo__bottom-delivery
@@ -398,14 +387,25 @@
 			{
 				width: 100%;
 				height: 175px;
+				margin-right: 0;
 				margin-top: 0px;
 				margin-bottom: 10px;
 			}
 			.promo__slider-content
 			{
+				height: 100%;
 				img
 				{
-					width: 57%;
+					width: 50%;
+					margin-top: 60px;
+				}
+				img:last-of-type
+				{
+					margin: 0;
+				}
+				svg
+				{
+					margin-top: 18px;
 				}
 			}
 			.promo__slider-buttons
@@ -420,8 +420,46 @@
 			margin-bottom: 10px;
 			img
 			{
-				left: 50%;
-    			transform: translate(-50%, 0px);
+    			height: 200px;
+    			width: 133px;
+    			margin: 0 auto;
+
+			}
+			.promo__bookday-top
+			{
+			    margin-top: 0;
+			    padding-top: 20px;
+    			padding-bottom: 21px;
+			}
+			.button__bookday
+			{
+
+
+			}
+			.bookday__link
+			{
+
+
+			}
+			&-timer
+			{
+				padding-top: 7px;
+			}
+			&-name
+			{
+
+			}
+			&-description
+			{
+
+			}
+			&-author
+			{
+
+			}
+			&-price
+			{
+
 			}
 		}
 		.promo__bottom

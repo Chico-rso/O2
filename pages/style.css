@@ -639,12 +639,12 @@ a:focus {
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 1366px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  padding: 0 20px;
+  padding: 0 113px;
 }
 
 .pln {
@@ -696,10 +696,11 @@ li.L9 {
 
 .header__top {
   height: 50px;
+  margin-bottom: 20px;
   border-bottom: 1px solid rgba(28, 41, 77, 0.15);
 }
 
-.header__top-list-menu {
+.header__top-menu {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -710,7 +711,7 @@ li.L9 {
   align-items: center;
 }
 
-.header__top-list-menu li {
+.header__top-menu li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -721,11 +722,11 @@ li.L9 {
   align-items: center;
 }
 
-.header__top-list-menu li svg {
+.header__top-menu li svg {
   margin-right: 6px;
 }
 
-.header__top-list-menu a {
+.header__top-menu a {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -753,7 +754,7 @@ li.L9 {
   margin-right: 7px;
 }
 
-.header__top-list .header__top-list-contacts {
+.header__top-list .header__top-contacts {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -764,7 +765,7 @@ li.L9 {
   align-items: center;
 }
 
-.header__top-list .header__top-list-contacts a {
+.header__top-list .header__top-contacts a {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -772,7 +773,7 @@ li.L9 {
   color: rgba(28, 41, 77, 0.8);
 }
 
-.header__top-list .header__top-list-contacts li {
+.header__top-list .header__top-contacts li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -783,11 +784,11 @@ li.L9 {
   align-items: center;
 }
 
-.header__top-list .header__top-list-contacts li:first-child {
+.header__top-list .header__top-contacts li:first-child {
   margin-right: 30px;
 }
 
-.header__top-list .header__top-list-contacts svg:last-child {
+.header__top-list .header__top-contacts svg:last-child {
   margin-left: 7px;
 }
 
@@ -802,6 +803,11 @@ li.L9 {
   display: none;
 }
 
+.header__bottom {
+  padding-bottom: 14px;
+  margin-bottom: 30px;
+}
+
 .header__bottom-wraper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -811,7 +817,6 @@ li.L9 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 20px;
   margin-bottom: 12px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -1053,7 +1058,6 @@ li.L9 {
   position: relative;
   width: 750px;
   height: 350px;
-  margin-top: 45px;
   background: #CCFF90;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -1067,6 +1071,8 @@ li.L9 {
 
 .promo__slider .promo__slider-button-left {
   position: absolute;
+  width: 40px;
+  height: 40px;
   top: 50%;
   left: 0;
   -webkit-transform: translate(0, -50%);
@@ -1079,6 +1085,8 @@ li.L9 {
 
 .promo__slider .promo__slider-button-right {
   position: absolute;
+  width: 40px;
+  height: 40px;
   top: 50%;
   right: 0;
   -webkit-transform: translate(0, -50%);
@@ -1121,22 +1129,43 @@ li.L9 {
 .promo__bookday .promo__bookday-price {
   font-family: Roboto;
   font-style: normal;
-  position: absolute;
 }
 
 .promo__bookday {
   position: relative;
-  width: 360px;
   background: #FFFFFF;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  min-height: 520px;
-  margin-top: 42px;
+  margin-left: 30px;
+}
+
+.promo__bookday .promo__bookday-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 21px;
+}
+
+.promo__bookday .promo__bookday-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .promo__bookday-timer {
-  top: 25px;
-  right: 20px;
   width: 68px;
   height: 25px;
   padding: 5px;
@@ -1151,24 +1180,18 @@ li.L9 {
 }
 
 .promo__bookday h3 {
-  position: absolute;
-  top: 22px;
-  left: 20px;
   margin: 0;
 }
 
 .promo__bookday img {
+  margin: 20px auto 15px auto;
   width: 167px;
   height: 250px;
-  position: absolute;
-  top: 68px;
-  right: 95px;
-  left: 95px;
 }
 
 .promo__bookday .promo__bookday-name {
-  top: 334px;
-  left: 20px;
+  margin-left: 20px;
+  margin-bottom: 8px;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
@@ -1176,9 +1199,8 @@ li.L9 {
 }
 
 .promo__bookday .promo__bookday-description {
-  top: 355px;
-  left: 20px;
-  right: 20px;
+  margin-left: 20px;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 14px;
   line-height: 19px;
@@ -1186,8 +1208,8 @@ li.L9 {
 }
 
 .promo__bookday .promo__bookday-author {
-  top: 403px;
-  left: 20px;
+  margin-left: 20px;
+  margin-bottom: 8px;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
@@ -1197,20 +1219,26 @@ li.L9 {
 }
 
 .promo__bookday .promo__bookday-price {
-  top: 426px;
-  left: 20px;
+  margin-left: 20px;
+  margin-bottom: 12px;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
   color: #1C294D;
 }
 
+.promo__bookday .button__bookday-wraper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .promo__bookday .button__bookday {
-  position: absolute;
   width: 146px;
   height: 40px;
-  top: 457px;
-  left: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
   border: 1px solid #EEEEEE;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1232,17 +1260,15 @@ li.L9 {
 }
 
 .promo__bookday .bookday__link {
-  position: absolute;
   width: 40px;
   height: 40px;
-  top: 456px;
-  left: 175px;
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+  display: inline-block;
 }
 
 .promo__bookday .bookday__link svg {
@@ -1514,7 +1540,7 @@ li.L9 {
 .arrivals__conteiner .arrivals__book ul li:first-child {
   width: 86px;
   height: 25px;
-  padding: 5px;
+  padding: 7px;
   margin-bottom: 10px;
   background: #EEE9F7;
   -webkit-border-radius: 5px;
@@ -1529,7 +1555,7 @@ li.L9 {
 .arrivals__conteiner .arrivals__book ul li:last-child {
   width: 54px;
   height: 25px;
-  padding: 5px;
+  padding: 7px;
   background: #FFEEEE;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -1967,7 +1993,7 @@ li.L9 {
 .getting__conteiner .getting__book ul li:first-child {
   width: 86px;
   height: 25px;
-  padding: 5px;
+  padding: 7px;
   margin-bottom: 10px;
   background: #EEE9F7;
   -webkit-border-radius: 5px;
@@ -1982,7 +2008,7 @@ li.L9 {
 .getting__conteiner .getting__book ul li:last-child {
   width: 54px;
   height: 25px;
-  padding: 5px;
+  padding: 7px;
   background: #FFEEEE;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -2308,11 +2334,10 @@ li.L9 {
   display: -ms-flexbox;
   display: flex;
   margin: 0 20px 30px 20px;
-  padding-top: 7px;
 }
 
 .news__list .news__item {
-  padding-top: 18px;
+  padding-top: 25px;
 }
 
 .news__list .news__item:not(:last-child) {
@@ -2481,6 +2506,7 @@ li.L9 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 38px;
 }
 
 .footer__nav-list .footer__nav-items h3 {
@@ -2594,15 +2620,11 @@ html {
 
 @media (max-width: 1100px) {
   .container {
-    max-width: 1024px;
+    padding: 0 25px;
   }
 
   .promotions--mobile {
     display: none;
-  }
-
-  .container {
-    max-width: 1024px;
   }
 
   .promo__wraper-slider-block {
@@ -2649,10 +2671,6 @@ html {
     max-width: 1024px;
   }
 
-  .container {
-    max-width: 1024px;
-  }
-
   .send__email-input {
     width: 360px;
   }
@@ -2663,14 +2681,6 @@ html {
 
   .send__email-text {
     font-size: 16px;
-  }
-
-  .container {
-    max-width: 1024px;
-  }
-
-  .container {
-    max-width: 1024px;
   }
 
   .benefits__item {
@@ -2693,10 +2703,6 @@ html {
     padding-top: 0;
   }
 
-  .container {
-    max-width: 1024px;
-  }
-
   .footer__bottom-nav span:first-child {
     margin-right: 50px;
   }
@@ -2704,11 +2710,11 @@ html {
 
 @media (max-width: 992px) {
   .container {
-    max-width: 768px;
+    padding: 0 20px;
   }
 
   .header__bottom-useroption,
-  .header__top-list-menu {
+  .header__top-menu {
     display: none;
   }
 
@@ -2727,14 +2733,6 @@ html {
 
   .promotions--mobile {
     display: none;
-  }
-
-  .container {
-    max-width: 768px;
-  }
-
-  .promo__bookday img {
-    left: 50px;
   }
 
   .promo__bottom .promo__bottom-delivery h3 {
@@ -2757,20 +2755,12 @@ html {
     top: 103px;
   }
 
-  .container {
-    max-width: 768px;
-  }
-
   .arrivals__conteiner .arrivals__book:last-child {
     display: none;
   }
 
   .arrivals__conteiner .arrivals__book img {
     margin-left: 30px;
-  }
-
-  .container {
-    max-width: 768px;
   }
 
   .send__email-text {
@@ -2790,20 +2780,12 @@ html {
     margin-right: 20px;
   }
 
-  .container {
-    max-width: 768px;
-  }
-
   .getting__conteiner .getting__book:last-child {
     display: none;
   }
 
   .getting__conteiner .getting__book img {
     margin-left: 30px;
-  }
-
-  .container {
-    max-width: 768px;
   }
 
   .benefits__list {
@@ -2826,10 +2808,6 @@ html {
     margin-right: 35px;
     border-right: 1px solid rgba(28, 41, 77, 0.15);
     padding-right: 35px;
-  }
-
-  .container {
-    max-width: 768px;
   }
 
   .footer__top-input {
@@ -2858,11 +2836,25 @@ html {
 
 @media (max-width: 767px) {
   .container {
-    max-width: 425px;
+    padding: 0 10px;
   }
 
   .header__top {
     display: none;
+  }
+
+  .header__bottom {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header__bottom-wraper {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .header__bottom-search {
+    height: 70px;
   }
 
   .header__bottom-search button,
@@ -2872,35 +2864,39 @@ html {
 
   .header__burger-mobile {
     display: block;
-    margin-right: 18px;
-    margin-left: 23px;
+    margin-right: 14px;
+    margin-left: 10px;
   }
 
   .header__search-mobile {
     display: block;
-    width: 55%;
-    margin-top: 15px;
+    position: relative;
+    width: 53%;
+    margin-top: 7px;
     margin-bottom: 15px;
   }
 
   .header__search-mobile input {
     display: block;
-    position: relative;
-    width: 195px;
+    background: #F7F7F7;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 100%;
     height: 40px;
+    padding-left: 19px;
+    border-style: none;
   }
 
   .header__search-mobile a {
     position: absolute;
-    top: 32px;
-    right: 66px;
+    top: 13px;
+    right: 6px;
   }
 
   .header__basket-mobile {
     display: block;
     position: relative;
-    margin-top: 26px;
-    margin-bottom: 25px;
+    margin-left: 31px;
   }
 
   .header__basket-mobile span {
@@ -2928,8 +2924,12 @@ html {
   }
 
   .header__bottom-logo {
-    margin-top: 17px;
-    margin-bottom: 18px;
+    margin-right: 17px;
+  }
+
+  .header__bottom-logo svg {
+    width: 43.75px;
+    height: 35px;
   }
 
   .header__bottom-navigation {
@@ -2957,12 +2957,26 @@ html {
   .promo__wraper .promo__wraper-slider-block .promo__slider {
     width: 100%;
     height: 175px;
+    margin-right: 0;
     margin-top: 0px;
     margin-bottom: 10px;
   }
 
+  .promo__wraper .promo__wraper-slider-block .promo__slider-content {
+    height: 100%;
+  }
+
   .promo__wraper .promo__wraper-slider-block .promo__slider-content img {
-    width: 57%;
+    width: 50%;
+    margin-top: 60px;
+  }
+
+  .promo__wraper .promo__wraper-slider-block .promo__slider-content img:last-of-type {
+    margin: 0;
+  }
+
+  .promo__wraper .promo__wraper-slider-block .promo__slider-content svg {
+    margin-top: 18px;
   }
 
   .promo__wraper .promo__wraper-slider-block .promo__slider-buttons {
@@ -2976,10 +2990,19 @@ html {
   }
 
   .promo__wraper .promo__bookday img {
-    left: 50%;
-    -webkit-transform: translate(-50%, 0px);
-    -ms-transform: translate(-50%, 0px);
-    transform: translate(-50%, 0px);
+    height: 200px;
+    width: 133px;
+    margin: 0 auto;
+  }
+
+  .promo__wraper .promo__bookday .promo__bookday-top {
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 21px;
+  }
+
+  .promo__wraper .promo__bookday-timer {
+    padding-top: 7px;
   }
 
   .promo__wraper .promo__bottom {

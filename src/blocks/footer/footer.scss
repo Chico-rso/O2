@@ -62,6 +62,7 @@
 .footer__nav-list
 {
 	display: flex;
+	margin-bottom: 38px;
 
 	.footer__nav-items
 	{
@@ -147,10 +148,6 @@
 }
 @media (max-width: 1100px)
 {
-	.container
-	{
-		max-width: 1024px;
-	}
 	.footer__bottom-nav span:first-child
 	{
 		margin-right: 50px;
@@ -158,10 +155,6 @@
 }
 @media (max-width: 992px)
 {
-	.container
- 	{
- 		max-width: 768px;
- 	}
  	.footer__top-input
  	{
  		margin-right: 20px;
