@@ -32,61 +32,61 @@
 		<div class="border"></div>
 	</section>
 	<section class="header__bottom">
-	<div class="container">
-		<a class="header__burger none" href="#">{% include '../../assets/svg/Icon-burger.svg' %}</a>
-		<div class="header__bottom-wraper">
-			<div class="header__bottom-search">
-				<div class="header__burger-mobile">
+		<div class="container">
+			<a class="header__burger none" href="#">{% include '../../assets/svg/Icon-burger.svg' %}</a>
+			<div class="header__bottom-wraper">
+				<div class="header__bottom-search">
+					<div class="header__burger-mobile">
+						{% include '../../assets/svg/Icon-burger.svg' %}
+					</div>
+					<a class="header__bottom-logo" href="#">{% include '../../assets/svg/logo.svg' %}</a>
+					<input type="search" placeholder="Автор, название, ISBN">
+					<div class="header__search-mobile">
+						<input class="header__search-mobile-input" type="search" placeholder="Что будем искать?">
+						<a href="#">{% include '../../assets/svg/search-mobile.svg' %}
+						</a>
+					</div>
+					<button class="header__bottom-search-button">
+						{% include '../../assets/svg/Icon-search.svg' %}
+						{% include '../../assets/svg/Icon-search.svg' %}
+						<span>Искать</span>
+					</button>
+					<div class="header__basket-mobile">
+						<span>10</span>
+						<a href="#">{% include '../../assets/svg/Icon-basket.svg' %}</a>
+					</div>
+				</div>
+				<div class="header__bottom-useroption">
+					<ul class="header__bottom-useroption-list">
+						<li>
+							{% include '../../assets/svg/Icon-postponed.svg' %}
+							<a class="header__bottom-useroption-link" href="#">Отложено</a>
+						</li>
+						<li>
+							{% include '../../assets/svg/Icon-smail.svg' %}
+							<a class="header__bottom-useroption-link" href="#">Войти</a>
+						</li>
+						<li>
+							<span>10</span>
+							{% include '../../assets/svg/Icon-basket.svg' %}
+							<a class="header__bottom-useroption-link" href="#">Корзина</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<nav class="header__bottom-navigation">
+				<div class="header__burger">
 					{% include '../../assets/svg/Icon-burger.svg' %}
 				</div>
-				<a class="header__bottom-logo" href="#">{% include '../../assets/svg/logo.svg' %}</a>
-				<input type="search" placeholder="Автор, название, ISBN">
-				<div class="header__search-mobile">
-					<input class="header__search-mobile-input" type="search" placeholder="Что будем искать?">
-					<a href="#">{% include '../../assets/svg/search-mobile.svg' %}
-					</a>
-				</div>
-				<button class="header__bottom-search-button">
-					{% include '../../assets/svg/Icon-search.svg' %}
-					{% include '../../assets/svg/Icon-search.svg' %}
-					<span>Искать</span>
-				</button>
-				<div class="header__basket-mobile">
-					<span>10</span>
-					<a href="#">{% include '../../assets/svg/Icon-basket.svg' %}</a>
-				</div>
-			</div>
-			<div class="header__bottom-useroption">
-				<ul class="header__bottom-useroption-list">
-					<li>
-						{% include '../../assets/svg/Icon-postponed.svg' %}
-						<a class="header__bottom-useroption-link" href="#">Отложено</a>
-					</li>
-					<li>
-						{% include '../../assets/svg/Icon-smail.svg' %}
-						<a class="header__bottom-useroption-link" href="#">Войти</a>
-					</li>
-					<li>
-						<span>10</span>
-						{% include '../../assets/svg/Icon-basket.svg' %}
-						<a class="header__bottom-useroption-link" href="#">Корзина</a>
-					</li>
+				<ul class="header__bottom-navigation-list">
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Авторы</a></li>
+					<li><a href="#">Новинки</a></li>
+					<li><a class="header__bottom-sale-link" href="#">{% include '../../assets/svg/Icon-sale.svg' %}Скидки</a></li>
+					<li><a href="#">Партнёрам</a></li>
+					<li><a href="#">Мы</a></li>
 				</ul>
-			</div>
+			</nav>
 		</div>
-		<nav class="header__bottom-navigation">
-			<div class="header__burger">
-				{% include '../../assets/svg/Icon-burger.svg' %}
-			</div>
-			<ul class="header__bottom-navigation-list">
-				<li><a href="#">Каталог</a></li>
-				<li><a href="#">Авторы</a></li>
-				<li><a href="#">Новинки</a></li>
-				<li><a class="header__bottom-sale-link" href="#">{% include '../../assets/svg/Icon-sale.svg' %}Скидки</a></li>
-				<li><a href="#">Партнёрам</a></li>
-				<li><a href="#">Мы</a></li>
-			</ul>
-		</nav>
-	</div>
 	</section>
 </header>

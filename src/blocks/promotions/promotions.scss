@@ -431,35 +431,29 @@
 			    padding-top: 20px;
     			padding-bottom: 21px;
 			}
+			.promo__bookday-bottom
+			{
+				img
+				{
+					margin-bottom: 15px;
+				}
+			}
 			.button__bookday
 			{
-
-
+				width: 75.2%;
+				margin-bottom: 20px;
 			}
 			.bookday__link
 			{
-
+				svg
+				{
+					margin: 10px 13px;
+				}
 
 			}
 			&-timer
 			{
 				padding-top: 7px;
-			}
-			&-name
-			{
-
-			}
-			&-description
-			{
-
-			}
-			&-author
-			{
-
-			}
-			&-price
-			{
-
 			}
 		}
 		.promo__bottom
@@ -474,6 +468,8 @@
 				{
 					width: 57%;
 					font-size: 20px;
+					margin-left: 20px;
+					margin-right: 11px;
 				}
 				img
 				{
@@ -493,12 +489,14 @@
 				margin-bottom: 10px;
 				h3
 				{
-					width: 57%;
+					width: 55%;
+					margin-left: 20px;
 					font-size: 20px;
 				}
 				img
 				{
-					width: 30%;
+				    width: 36%;
+    				margin-right: 14px;
 				}
 				svg
 				{
