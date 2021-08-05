@@ -2,23 +2,43 @@
 	<div class="container">
 		<div class="promo__wraper">
 			<div class="promo__wraper-slider-block">
-				<div class="promo__slider">
+				<div class="promo__slider _promo__slider">
 				<div class="promo__slider-buttons">
-					<button class="button-prev">
+					<button class="button-prev" onclick="o2.promotions.plusSlides(-1)">
 						{% include '../../assets/svg/arrow-left.svg' %}
 					</button>
-					<button class="button-next">
+					<button class="button-next" onclick="o2.promotions.plusSlides(1)">
 						{% include '../../assets/svg/arrow-right.svg' %}
 					</button>
 				</div>
 					<div class="promo__slider-content">
+					<div class="slider-wraper">
 						<ul>
-							<li>
+							<li class="slider-item">
+								<img src="/img/2=3.png" alt="2=3">
+								<img src="/img/на все книги.png" alt="">
+							</li>
+							<li class="slider-item">
+								<img src="/img/2=3.png" alt="2=3">
+								<img src="/img/на все книги.png" alt="">
+							</li>
+							<li class="slider-item">
+								<img src="/img/2=3.png" alt="2=3">
+								<img src="/img/на все книги.png" alt="">
+							</li>
+							<li class="slider-item">
 								<img src="/img/2=3.png" alt="2=3">
 								<img src="/img/на все книги.png" alt="">
 							</li>
 						</ul>
 					</div>
+					</div>
+						<ol class="promo__slider-dots">
+						<li class="dot _dot" onclick="o2.promotions.showSlides(1)"></li>
+						<li class="dot _dot" onclick="o2.promotions.showSlides(2)"></li>
+						<li class="dot _dot" onclick="o2.promotions.showSlides(3)"></li>
+						<li class="dot _dot" onclick="o2.promotions.showSlides(4)"></li>
+					</ol>
 				</div>
 				<div class="promo__bottom">
 					<div class="promo__bottom-delivery">
@@ -59,44 +79,48 @@
 	</div>
 </section>
 
-<section class="promotions--mobile">
+<!-- <section class="promotions--mobile">
 	<div class="container">
 		<div class="promo__wraper">
 			<div class="promo__wraper-slider-block">
 				<div class="promo__slider">
 				<div class="promo__slider-buttons">
-					<button class="promo__slider-button-left">
+					<button class="button-prev" onclick="o2.promotions.plusSlides(-1)">
 						{% include '../../assets/svg/arrow-left.svg' %}
 					</button>
-					<button class="promo__slider-button-right">
+					<button class="button-next" onclick="o2.promotions.plusSlides(1)">
 						{% include '../../assets/svg/arrow-right.svg' %}
 					</button>
 				</div>
 					<div class="promo__slider-content">
 						<ul>
-							<li>
-								<img src="/img/2=3.png" alt="2=3">
-								<img src="/img/на все книги.png" alt="">
-								{% include '../../assets/svg/Slider.svg' %}
-							</li>
-							{# <li>
+							<li class="slider-item">
 								<img src="/img/2=3.png" alt="2=3">
 								<img src="/img/на все книги.png" alt="">
 							</li>
-							<li>
+							<li class="slider-item">
 								<img src="/img/2=3.png" alt="2=3">
 								<img src="/img/на все книги.png" alt="">
 							</li>
-							<li>
+							<li class="slider-item">
 								<img src="/img/2=3.png" alt="2=3">
 								<img src="/img/на все книги.png" alt="">
 							</li>
-							<li>
+							<li class="slider-item">
 								<img src="/img/2=3.png" alt="2=3">
 								<img src="/img/на все книги.png" alt="">
-							</li> #}
+							</li>
+							<li class="slider-item">
+								<img src="/img/2=3.png" alt="2=3">
+								<img src="/img/на все книги.png" alt="">
+							</li>
 						</ul>
 					</div>
+					<ol class="promo__slider-dots">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
 				</div>
 				<div class="promo__bookday">
 			<div class="promo__bookday-top">
@@ -132,10 +156,46 @@
 						<img src="/img/bottom-sale.png" alt="sale">
 					</div>
 				</div>
-			</div>
+			</div
 		</div>
 	</div>
-</section>
-<script type="text/javascript">
-	const slides = document.querySelectorAll('')
-</script>
+</section> -->
+<!-- <script type="text/javascript">
+	const slides = document.querySelectorAll('.slider-item'),
+		  prev = document.querySelector('.button-prev'),
+		  next = document.querySelector('.button-next');
+	let slideIndex = 1;
+
+	showSlides(slideIndex);
+
+	function showSlides(n)
+	{
+		if(n > slides.length)
+		{
+			n = 1;
+		}
+
+		if(n < 1)
+		{
+			n = slides.length;
+		}
+
+		slides.forEach(item => item.style.display = 'none' );
+
+		slides[n - 1].style.display = 'block';
+	}
+
+	function plusSlides(n)
+	{
+		showSlides( slideIndex += n);
+	}
+
+	prev.addEventListener('click', () =>
+	{
+		plusSlides(-1);
+	});
+	next.addEventListener('click', () =>
+	{
+		plusSlides(1);
+	});
+</script> -->

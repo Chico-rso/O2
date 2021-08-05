@@ -17,6 +17,7 @@ const o2 =
 	 */
 	init()
 	{
+		this.promotions.initSlider();
 	},
 	/**
 	* отслеживание клика вне блока
