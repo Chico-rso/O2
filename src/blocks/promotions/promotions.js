@@ -18,7 +18,7 @@ o2.promotions =
 
 		this.slides.forEach(item => item.style.display = 'none' );
 
-		this.slides[n - 1].style.display = 'block';
+		this.slides[n - 1].style.display = 'flex';
 
 		this.slideIndex = n;
 

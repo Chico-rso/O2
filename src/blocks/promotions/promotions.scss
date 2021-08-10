@@ -6,10 +6,14 @@
 .promo__wraper
 {
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: nowrap;
-	background-color: #F9F9F9;
+	display: grid;
+    grid-template-columns: minmax(54%, 750px);
+    grid-template-areas: "slider book"
+    "slider book"
+    "bottom book";
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: #F9F9F9;
 }
 
 /**
@@ -21,79 +25,80 @@
  	display: flex;
  	justify-content: center;
  	align-items: center;
- 	position: relative;
- 	width: 750px;
- 	height: 350px;
- 	background: #CCFF90;
- 	border-radius: 5px;
- 	button
- 	{
- 		background-color: #fff;
- 		border-radius: 5px;
-
- 	}
- 	.button-prev
- 	{
- 		position: absolute;
- 		width: 40px;
- 		height: 40px;
- 		top: 50%;
- 		left: 0;
- 		transform: translate(0, -50%);
- 		padding: 11px 16px;
- 		margin-left: 28px;
- 		border-style: none;
- 	}
- 	.button-next
- 	{
- 		position: absolute;
- 		width: 40px;
- 		height: 40px;
- 		top: 50%;
- 		right: 0;
- 		transform: translate(0, -50%);
- 		padding: 11px 16px;
- 		margin-right: 28px;
- 		border-style: none;
- 	}
-    ol
+    grid-area: slider;
+    position: relative;
+    width: 750px;
+    height: 350px;
+    background: #CCFF90;
+    border-radius: 5px;
+    button
     {
-        list-style: none;
-        position: absolute;
-        bottom: 3%;
-        margin: 0;
-        padding: 0;
-        left: 42.2%;
-        li
+     background-color: #fff;
+     border-radius: 5px;
+
+ }
+ .button-prev
+ {
+     position: absolute;
+     width: 40px;
+     height: 40px;
+     top: 49%;
+     left: 0;
+     transform: translate(0, -50%);
+     padding: 11px 16px;
+     margin-left: 28px;
+     border-style: none;
+ }
+ .button-next
+ {
+     position: absolute;
+     width: 40px;
+     height: 40px;
+     top: 50%;
+     right: 0;
+     transform: translate(0, -50%);
+     padding: 11px 16px;
+     margin-right: 28px;
+     border-style: none;
+ }
+ ol
+ {
+    list-style: none;
+    position: absolute;
+    bottom: 3%;
+    margin: 0;
+    padding: 0;
+    left: 42.2%;
+    li
+    {
+        background-color: #ffff;
+        border-radius: 10%;
+        display: inline-block;
+        width:26px;
+        height:3px;
+        cursor: pointer;
+        opacity: 1;
+        &.opacity
         {
-            background-color: #ffff;
-            border-radius: 10%;
-            display: inline-block;
-            width:26px;
-            height:3px;
-            cursor: pointer;
-            opacity: 1;
-            &.opacity
-            {
-                opacity: 0.5;
-            }
+            opacity: 0.5;
         }
-
-
     }
+
+
+}
 }
 .promo__slider-content
 {
   li
   {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-wrap: wrap;
-     height: 100%;
-     width: 170px;
-     gap: 20px;
- }
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   height: 100%;
+   width: 170px;
+   gap: 20px;
+}
 }
 
 /**
@@ -107,150 +112,156 @@
  .promo__bookday
  {
  	position: relative;
- 	background: #FFFFFF;
- 	border-radius: 5px;
- 	margin-left: 30px;
- 	.promo__bookday-top
- 	{
- 		display: flex;
- 		justify-content: space-between;
- 		margin-right: 20px;
- 		margin-left: 20px;
- 		margin-top: 21px;
- 	}
- 	.promo__bookday-bottom
- 	{
- 		display: flex;
- 		flex-direction: column;
- 	}
- 	&-timer
- 	{
- 		width: 68px;
- 		height: 25px;
- 		padding: 5px;
- 		@extend%font-position-main;
- 		font-weight: 500;
- 		font-size: 12px;
- 		line-height: 15px;
- 		background: rgba(255, 122, 0, 0.15);
- 		border-radius: 5px;
- 		text-align: center;
- 		color: #FF7A00;
- 	}
- 	h3
- 	{
- 		margin: 0;
- 	}
- 	img
- 	{
- 		margin: 20px auto 15px auto;
- 		width: 167px;
- 		height: 250px;
-
- 	}
- 	.promo__bookday-name
- 	{
- 		@extend%font-position-main;
- 		margin-left: 20px;
- 		margin-bottom: 8px;
- 		font-weight: normal;
- 		font-size: 12px;
- 		line-height: 15px;
- 		color: rgba(28, 41, 77, 0.5);
- 	}
- 	.promo__bookday-description
- 	{
- 		@extend%font-position-main;
- 		margin-left: 20px;
- 		margin-bottom: 8px;
- 		font-weight: 500;
- 		font-size: 14px;
- 		line-height: 19px;
- 		color: #1C294D;
- 	}
- 	.promo__bookday-author
- 	{
- 		@extend%font-position-main;
- 		margin-left: 20px;
- 		margin-bottom: 8px;
- 		font-weight: normal;
- 		font-size: 12px;
- 		line-height: 15px;
- 		letter-spacing: -0.1px;
- 		color: #1C294D;
- 		opacity: 0.8;
- 	}
- 	.promo__bookday-price
- 	{
- 		@extend%font-position-main;
- 		margin-left: 20px;
- 		margin-bottom: 12px;
- 		font-weight: bold;
- 		font-size: 18px;
- 		line-height: 20px;
- 		color: #1C294D;
- 	}
- 	.button__bookday-wraper
- 	{
- 		display: flex;
- 	}
- 	.button__bookday
- 	{
- 		width: 146px;
- 		height: 40px;
- 		margin-left: 20px;
- 		margin-right: 10px;
- 		border: 1px solid #EEEEEE;
- 		box-sizing: border-box;
- 		border-radius: 5px;
- 		svg
- 		{
- 			margin-right: 6px;
- 		}
- 		span
- 		{
- 			font-family: Roboto;
- 			font-style: normal;
- 			font-weight: 500;
- 			font-size: 14px;
- 			line-height: 15px;
- 			color: #1C294D;
- 		}
- 	}
- 	.bookday__link
- 	{
- 		width: 40px;
- 		height: 40px;
- 		background: #FFFFFF;
- 		border: 1px solid #EEEEEE;
- 		box-sizing: border-box;
- 		border-radius: 5px;
- 		display: inline-block;
- 		svg
- 		{
- 			margin: 10px 14px;
- 		}
- 	}
+    grid-area: book;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin-left: 30px;
+    .promo__bookday-top
+    {
+     display: flex;
+     justify-content: space-between;
+     margin-right: 20px;
+     margin-left: 20px;
+     margin-top: 21px;
  }
+ .promo__bookday-bottom
+ {
+     display: flex;
+     flex-direction: column;
+ }
+ &-timer
+ {
+     width: 68px;
+     height: 25px;
+     padding: 5px;
+     @extend%font-position-main;
+     font-weight: 500;
+     font-size: 12px;
+     line-height: 15px;
+     background: rgba(255, 122, 0, 0.15);
+     border-radius: 5px;
+     text-align: center;
+     color: #FF7A00;
+ }
+ h3
+ {
+     margin: 0;
+ }
+ img
+ {
+     margin: 20px auto 15px auto;
+     width: 167px;
+     height: 250px;
+
+ }
+ .promo__bookday-name
+ {
+     @extend%font-position-main;
+     margin-left: 20px;
+     margin-bottom: 8px;
+     font-weight: normal;
+     font-size: 12px;
+     line-height: 15px;
+     color: rgba(28, 41, 77, 0.5);
+ }
+ .promo__bookday-description
+ {
+     @extend%font-position-main;
+     margin-left: 20px;
+     margin-bottom: 8px;
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 19px;
+     color: #1C294D;
+ }
+ .promo__bookday-author
+ {
+     @extend%font-position-main;
+     margin-left: 20px;
+     margin-bottom: 8px;
+     font-weight: normal;
+     font-size: 12px;
+     line-height: 15px;
+     letter-spacing: -0.1px;
+     color: #1C294D;
+     opacity: 0.8;
+ }
+ .promo__bookday-price
+ {
+     @extend%font-position-main;
+     margin-left: 20px;
+     margin-bottom: 12px;
+     font-weight: bold;
+     font-size: 18px;
+     line-height: 20px;
+     color: #1C294D;
+ }
+ .button__bookday-wraper
+ {
+     display: flex;
+ }
+ .button__bookday
+ {
+     width: 146px;
+     height: 40px;
+     margin-left: 20px;
+     margin-right: 10px;
+     border: 1px solid #EEEEEE;
+     box-sizing: border-box;
+     border-radius: 5px;
+     span:before
+     {
+        content: url("./svg/basket-orange.svg");
+        position: absolute;
+        top: 0;
+        left: -29px;
+    }
+    span
+    {
+        position: relative;
+        margin-left: 30px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 15px;
+        color: #1C294D;
+    }
+}
+.bookday__link
+{
+ width: 40px;
+ height: 40px;
+ background: #FFFFFF;
+ border: 1px solid #EEEEEE;
+ box-sizing: border-box;
+ border-radius: 5px;
+ display: inline-block;
+ svg
+ {
+    margin: 10px 14px;
+}
+}
+}
 /**
  * promo-bottom
  */
  .promo__bottom
  {
  	display: flex;
- 	.promo__bottom-delivery
- 	{
- 		display: flex;
- 		position: relative;
- 		width: 360px;
- 		min-height: 140px;
- 		margin-top: 30px;
- 		align-items: center;
- 		background: #6D378F;
- 		border-radius: 5px;
- 		h3
- 		{
- 			width: 199px;
+    grid-area: bottom;
+    .promo__bottom-delivery
+    {
+     display: flex;
+     width: 360px;
+     min-height: 140px;
+     margin-top: 30px;
+     align-items: center;
+     background: #6D378F;
+     border-radius: 5px;
+     h3
+     {
+ 			// width: 199px;
  			margin-left: 25px;
  			margin-right: 13px;
  			font-family: Gosha Sans;
@@ -261,17 +272,28 @@
  			color: #FFFFFF;
  			z-index: 2;
  		}
- 		svg
- 		{
- 			position: absolute;
- 			left: 13px;
- 			top: 35px;
- 		}
- 	}
- 	.promo__bottom-sale
- 	{
- 		display: flex;
- 		position: relative;
+        img
+        {
+            margin-right: 25px;
+        }
+        span
+        {
+            position: relative;
+        }
+        span:after
+        {
+            content: url("./svg/orange-line.svg");
+            position: absolute;
+            top: 0px;
+            z-index: -1;
+            left: -11px;
+
+        }
+    }
+    .promo__bottom-sale
+    {
+     display: flex;
+ 		// position: relative;
  		align-items: center;
  		justify-content: space-evenly;
  		width: 360px;
@@ -282,7 +304,7 @@
  		border-radius: 5px;
  		h3
  		{
- 			width: 162px;
+ 			// width: 162px;
  			margin-left: 4px;
  			font-family: Gosha Sans;
  			font-style: normal;
@@ -297,57 +319,67 @@
  			width: 125px;
  			margin-right: 4px;
  		}
- 		svg
- 		{
- 			position: absolute;
- 			left: 45px;
- 			top: 83px;
- 		}
+        span
+        {
+            position: relative;
+        }
+        span:after
+        {
+            content: url("/svg/blue-line.svg");
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 19px;
+        }
+ 		// svg
+ 		// {
+ 		// 	position: absolute;
+ 		// 	left: 45px;
+ 		// 	top: 83px;
+ 		// }
  	}
  }
  @media (max-width: 1100px)
- {
-
- 	.promotions--mobile
+ { 	.promo__wraper-slider-block
  	{
- 		display: none;
- 	}
- 	.promo__wraper-slider-block
- 	{
- 		width: 60%;
+ 		// width: 60%;
 
  		.promo__bottom-delivery
  		{
  			width: 50%;
  			h3
  			{
- 				width: 50%;
+ 				width: 0;
  			}
  			img
  			{
  				width: 50%;
  			}
- 		}
- 		.promo__bottom-sale
- 		{
- 			width: 50%;
- 			h3
- 			{
- 				width: 50%;
- 			}
- 			img
- 			{
- 				width: 50%;
- 			}
- 		}
- 	}
- 	.promo__slider
- 	{
- 		width: 100%;
- 	}
- 	.promo__bookday
- 	{
- 		width: 37%;
+            svg
+            {
+                top: 22px;
+            }
+        }
+        .promo__bottom-sale
+        {
+            width: 50%;
+            h3
+            {
+               width: 50%;
+           }
+           img
+           {
+               width: 50%;
+           }
+       }
+   }
+   .promo__slider
+   {
+     width: 100%;
+ }
+ .promo__bookday
+ {
+ 		// width: 37%;
  		img
  		{
  			left:100px;
@@ -360,6 +392,10 @@
  	{
  		display: none;
  	}
+    .promo__slider
+    {
+        width: 104%;
+    }
  	.promo__bottom
  	{
  		.promo__bottom-delivery
@@ -400,145 +436,152 @@
  	.promo__wraper
  	{
  		flex-wrap: wrap;
- 		.promo__wraper-slider-block
- 		{
- 			width: 100%;
- 			.promo__slider
- 			{
- 				width: 100%;
- 				height: 175px;
- 				margin-right: 0;
- 				margin-top: 0px;
- 				margin-bottom: 10px;
-                .promo__slider-dots
-                {
-                    left: 116px;
-                }
- 			}
- 			.promo__slider-content
- 			{
- 				height: 100%;
-                ul
-                {
-                    width: 50%;
-                    margin: 0 auto;
-                }
- 				li
- 				{
- 					gap: 8px;
- 				}
- 				img
- 				{
- 					width: 50%;
- 					margin-top: 60px;
- 				}
- 				img:last-of-type
- 				{
- 					margin: 0;
- 					width: 49%;
- 					margin-bottom: 22px;
- 				}
- 				svg
- 				{
- 					margin-top: 18px;
- 				}
- 			}
- 			.promo__slider-buttons
- 			{
- 				display: none;
- 			}
- 		}
- 		.promo__bookday
- 		{
- 			width: 100%;
- 			margin: 0;
- 			margin-bottom: 10px;
- 			img
- 			{
- 				height: 200px;
- 				width: 133px;
- 				margin: 0 auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: "slider"
+                             "book"
+                             "bottom";
 
- 			}
- 			.promo__bookday-top
- 			{
- 				margin-top: 0;
- 				padding-top: 20px;
- 				padding-bottom: 21px;
- 			}
- 			.promo__bookday-bottom
- 			{
- 				img
- 				{
- 					margin-bottom: 15px;
- 				}
- 			}
- 			.button__bookday
- 			{
- 				width: 75.2%;
- 				margin-bottom: 20px;
- 			}
- 			.bookday__link
- 			{
- 				svg
- 				{
- 					margin: 10px 13px;
- 				}
+        .promo__wraper-slider-block
+        {
+            width: 100%;
+            .promo__slider
+            {
+               width: 100%;
+               grid-area: slider;
+               height: 175px;
+               margin-right: 0;
+               margin-top: 0px;
+               margin-bottom: 10px;
+               .promo__slider-dots
+               {
+                left: 116px;
+            }
+        }
+        .promo__slider-content
+        {
+           height: 100%;
+           ul
+           {
+            margin: 0 auto;
+        }
+        li
+        {
+          gap: 8px;
+      }
+      img
+      {
+          width: 50%;
+          margin-top: 60px;
+      }
+      img:last-of-type
+      {
+          margin: 0;
+          width: 49%;
+          margin-bottom: 22px;
+      }
+      svg
+      {
+          margin-top: 18px;
+      }
+  }
+  .promo__slider-buttons
+  {
+   display: none;
+}
+}
+.promo__bookday
+{
+    width: 100%;
+    grid-area: book;
+    margin: 0;
+    margin-bottom: 10px;
+    img
+    {
+       height: 200px;
+       width: 133px;
+       margin: 0 auto;
 
- 			}
- 			&-timer
- 			{
- 				padding-top: 7px;
- 			}
- 		}
- 		.promo__bottom
- 		{
- 			flex-wrap: wrap;
- 			.promo__bottom-delivery
- 			{
- 				width: 100%;
- 				margin: 0;
- 				margin-bottom: 10px;
- 				h3
- 				{
- 					width: 57%;
- 					font-size: 20px;
- 					margin-left: 20px;
- 					margin-right: 11px;
- 				}
- 				img
- 				{
- 					width: 30%;
- 					height: 75%;
- 				}
- 				svg
- 				{
- 					top: 33px;
- 					left: 0;
- 				}
- 			}
- 			.promo__bottom-sale
- 			{
- 				width: 100%;
- 				margin: 0;
- 				margin-bottom: 10px;
- 				h3
- 				{
- 					width: 55%;
- 					margin-left: 20px;
- 					font-size: 20px;
- 				}
- 				img
- 				{
- 					width: 36%;
- 					margin-right: 14px;
- 				}
- 				svg
- 				{
- 					top: 83px;
- 					left: 33px;
- 				}
- 			}
- 		}
- 	}
- }
+   }
+   .promo__bookday-top
+   {
+       margin-top: 0;
+       padding-top: 20px;
+       padding-bottom: 21px;
+   }
+   .promo__bookday-bottom
+   {
+       img
+       {
+          margin-bottom: 15px;
+      }
+  }
+  .button__bookday
+  {
+   width: 75.2%;
+   margin-bottom: 20px;
+}
+.bookday__link
+{
+   svg
+   {
+      margin: 10px 13px;
+  }
+
+}
+&-timer
+{
+   padding-top: 7px;
+}
+}
+.promo__bottom
+{
+    flex-wrap: wrap;
+    grid-area: bottom;
+    .promo__bottom-delivery
+    {
+       width: 100%;
+       margin: 0;
+       margin-bottom: 10px;
+       h3
+       {
+          width: 57%;
+          font-size: 20px;
+          margin-left: 20px;
+          margin-right: 11px;
+      }
+      img
+      {
+          width: 30%;
+          height: 75%;
+      }
+      svg
+      {
+          top: 33px;
+          left: 0;
+      }
+  }
+  .promo__bottom-sale
+  {
+   width: 100%;
+   margin: 0;
+   margin-bottom: 10px;
+   h3
+   {
+      width: 55%;
+      margin-left: 20px;
+      font-size: 20px;
+  }
+  img
+  {
+      width: 36%;
+      margin-right: 14px;
+  }
+  svg
+  {
+      top: 83px;
+      left: 33px;
+  }
+}
+}
+}
+}

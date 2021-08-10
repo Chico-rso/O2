@@ -10,6 +10,10 @@
 	height: 50px;
 	margin-bottom: 20px;
 	border-bottom: 1px solid rgba(28, 41, 77, 0.15);
+	.container
+	{
+		padding: 0px 118px 0px 113px;
+	}
 }
 .header__top-menu
 {
@@ -18,12 +22,21 @@
 
 	li
 	{
-		svg
-		{
-			margin-right: 6px;
-		}
+
 		display: flex;
 		align-items: center;
+		svg
+		{
+			margin-right: 7px;
+		}
+		&:nth-child(1)
+		{
+			svg
+			{
+				margin-right: 9px;
+			}
+		}
+
 	}
 	a
 	{
@@ -32,21 +45,17 @@
 		font-size: 14px;
 		line-height: 16px;
 		color: rgba(28, 41, 77, 0.8);
-		padding-right: 32px;
+		padding-right: 31px;
 	}
 }
 .header__top-list
 {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 17px;
+	padding-top: 15px;
 	margin-bottom: 17px;
 	width: 100%;
-	margin: 0 6px;
-	svg
-	{
-		margin-right: 7px;
-	}
+	margin: 0 4px;
 	.header__top-contacts
 	{
 		display: flex;
@@ -63,14 +72,22 @@
 		{
 			display: flex;
 			align-items: center ;
-		}
-		li:first-child
-		{
-			margin-right: 30px;
-		}
-		svg:last-child
-		{
-			margin-left: 7px;
+			&:nth-child(1)
+			{
+				margin-right: 31px;
+				svg
+				{
+					margin-right: 8px;
+				}
+			}
+			&:nth-child(2)
+			{
+				a
+				{
+					margin-left: 7px;
+					margin-right: 6px;
+				}
+			}
 		}
 	}
 }
@@ -169,15 +186,15 @@
  		position: relative;
  		span
  		{
- 			top: -13px;
- 			right: 53px;
+ 			top: -8px;
+ 			right: 54px;
  			position: absolute;
  			padding: 2px;
  			font-family: Roboto;
  			font-style: normal;
  			font-weight: 500;
- 			font-size: 13px;
- 			line-height: 16px;
+ 			font-size: 9px;
+ 			line-height: 11px;
  			text-align: center;
  			color: #FFFFFF;
  			background: #FF7A00;
@@ -187,7 +204,17 @@
  }
  .header__bottom-useroption
  {
- 	padding-bottom: 3px;
+ 	padding-bottom: 6px;
+ }
+ .header__bottom-useroption-list
+ {
+ 	li:nth-child(1)
+ 	{
+ 		svg
+ 		{
+ 			margin-right: 9px;
+ 		}
+ 	}
  }
  .header__bottom-useroption-link
  {
