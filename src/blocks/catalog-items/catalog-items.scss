@@ -113,6 +113,20 @@
 	{
 		display: block;
 	}
+	.catalog__book:nth-child(2)
+	{
+		img
+		{
+			margin-left: 47px;
+		}
+	}
+	.catalog__book:nth-child(3)
+	{
+		img
+		{
+			margin-left: 38px;
+		}
+	}
 }
 .catalog__book
 {

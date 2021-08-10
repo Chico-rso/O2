@@ -1229,7 +1229,7 @@ li.L9 {
 
 .promo__bookday .promo__bookday-name {
   margin-left: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
@@ -1238,7 +1238,7 @@ li.L9 {
 
 .promo__bookday .promo__bookday-description {
   margin-left: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
   font-weight: 500;
   font-size: 14px;
   line-height: 19px;
@@ -1564,6 +1564,14 @@ li.L9 {
 
 .catalog__conteiner .none {
   display: block;
+}
+
+.catalog__conteiner .catalog__book:nth-child(2) img {
+  margin-left: 47px;
+}
+
+.catalog__conteiner .catalog__book:nth-child(3) img {
+  margin-left: 38px;
 }
 
 .catalog__book {
@@ -2027,6 +2035,14 @@ li.L9 {
 
 .catalog__conteiner .none {
   display: block;
+}
+
+.catalog__conteiner .catalog__book:nth-child(2) img {
+  margin-left: 47px;
+}
+
+.catalog__conteiner .catalog__book:nth-child(3) img {
+  margin-left: 38px;
 }
 
 .catalog__book {
@@ -3150,12 +3166,13 @@ html {
     width: 57%;
     font-size: 20px;
     margin-left: 20px;
-    margin-right: 11px;
   }
 
   .promo__wraper .promo__bottom .promo__bottom-delivery img {
-    width: 30%;
-    height: 75%;
+    width: 27%;
+    height: 74%;
+    margin-left: 24px;
+    margin-right: 0;
   }
 
   .promo__wraper .promo__bottom .promo__bottom-delivery svg {
@@ -3177,7 +3194,7 @@ html {
 
   .promo__wraper .promo__bottom .promo__bottom-sale img {
     width: 36%;
-    margin-right: 14px;
+    margin-right: 19px;
   }
 
   .promo__wraper .promo__bottom .promo__bottom-sale svg {
@@ -3520,7 +3537,7 @@ html {
   .footer__top-logo {
     margin: 0;
     margin-left: 20px;
-    padding: 20px 0;
+    padding: 24px 0 16px 0;
   }
 
   .social-link-mobile {
@@ -3532,7 +3549,7 @@ html {
     width: 100%;
     text-align: center;
     border-bottom: 1px solid rgba(28, 41, 77, 0.15);
-    padding: 15px 0;
+    padding: 21px 0 8px 0;
   }
 
   .social-link-mobile a:nth-child(3) {
@@ -3565,6 +3582,25 @@ html {
 
   .footer__nav-list .footer__nav-items {
     width: 100%;
+  }
+
+  .footer__nav-list .footer__nav-items--grid li {
+    display: grid;
+    grid-template-columns: 23px 131px;
+    grid-template-areas: "svg a span" "svg a span";
+    width: 100%;
+  }
+
+  .footer__nav-list .footer__nav-items--grid li svg {
+    grid-area: svg;
+  }
+
+  .footer__nav-list .footer__nav-items--grid li span {
+    grid-area: span;
+  }
+
+  .footer__nav-list .footer__nav-items--grid li a {
+    grid-area: a;
   }
 
   .footer__nav-list .footer__nav-items h3 {

@@ -219,7 +219,7 @@
  	{
  		margin: 0;
  		margin-left: 20px;
- 		padding: 20px 0;
+ 		padding: 24px 0 16px 0;
  	}
  	.social-link-mobile
  	{
@@ -229,7 +229,7 @@
  		width: 100%;
  		text-align: center;
  		border-bottom: 1px solid rgba(28, 41, 77, 0.15);
- 		padding: 15px 0;
+ 		padding: 21px 0 8px 0;
  		a:nth-child(3)
  		{
  			padding-left: 10px;
@@ -263,6 +263,29 @@
  		.footer__nav-items
  		{
  			width: 100%;
+ 			&--grid
+ 			{
+ 				li
+ 				{
+ 					display: grid;
+ 					grid-template-columns: 23px 131px;
+ 					grid-template-areas: "svg a span"
+ 					"svg a span";
+ 					width: 100%;
+ 					svg
+ 					{
+ 						grid-area: svg;
+ 					}
+ 					span
+ 					{
+ 						grid-area: span;
+ 					}
+ 					a
+ 					{
+ 						grid-area: a;
+ 					}
+ 				}
+ 			}
  			h3
  			{
  				display: inline-block;

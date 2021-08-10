@@ -158,7 +158,7 @@
  {
      @extend%font-position-main;
      margin-left: 20px;
-     margin-bottom: 8px;
+     margin-bottom: 7px;
      font-weight: normal;
      font-size: 12px;
      line-height: 15px;
@@ -168,7 +168,7 @@
  {
      @extend%font-position-main;
      margin-left: 20px;
-     margin-bottom: 8px;
+     margin-bottom: 9px;
      font-weight: 500;
      font-size: 14px;
      line-height: 19px;
@@ -396,96 +396,96 @@
     {
         width: 104%;
     }
- 	.promo__bottom
- 	{
- 		.promo__bottom-delivery
- 		{
- 			h3
- 			{
- 				margin-left: 14px;
- 				margin-right: -8px;
- 				font-size: 15px;
- 			}
- 			svg
- 			{
- 				top: 18px;
- 				left: 2px;
- 			}
- 		}
-
- 		.promo__bottom-sale
- 		{
- 			h3
- 			{
- 				font-size: 15px;
- 			}
- 			svg
- 			{
- 				left: 0px;
- 				top: 103px;
- 			}
- 		}
- 	}
+    .promo__bottom
+    {
+       .promo__bottom-delivery
+       {
+        h3
+        {
+         margin-left: 14px;
+         margin-right: -8px;
+         font-size: 15px;
+     }
+     svg
+     {
+         top: 18px;
+         left: 2px;
+     }
  }
- @media (max-width: 767px) {
 
- 	.promotions--mobile
- 	{
- 		display: block;
- 	}
- 	.promo__wraper
- 	{
- 		flex-wrap: wrap;
-        grid-template-columns: 1fr;
-        grid-template-areas: "slider"
-                             "book"
-                             "bottom";
+ .promo__bottom-sale
+ {
+    h3
+    {
+     font-size: 15px;
+ }
+ svg
+ {
+     left: 0px;
+     top: 103px;
+ }
+}
+}
+}
+@media (max-width: 767px) {
 
-        .promo__wraper-slider-block
-        {
-            width: 100%;
-            .promo__slider
-            {
-               width: 100%;
-               grid-area: slider;
-               height: 175px;
-               margin-right: 0;
-               margin-top: 0px;
-               margin-bottom: 10px;
-               .promo__slider-dots
-               {
-                left: 116px;
-            }
-        }
-        .promo__slider-content
-        {
-           height: 100%;
-           ul
-           {
-            margin: 0 auto;
-        }
-        li
-        {
-          gap: 8px;
-      }
-      img
-      {
-          width: 50%;
-          margin-top: 60px;
-      }
-      img:last-of-type
-      {
-          margin: 0;
-          width: 49%;
-          margin-bottom: 22px;
-      }
-      svg
-      {
-          margin-top: 18px;
-      }
-  }
-  .promo__slider-buttons
+  .promotions--mobile
   {
+   display: block;
+}
+.promo__wraper
+{
+   flex-wrap: wrap;
+   grid-template-columns: 1fr;
+   grid-template-areas: "slider"
+   "book"
+   "bottom";
+
+   .promo__wraper-slider-block
+   {
+    width: 100%;
+    .promo__slider
+    {
+       width: 100%;
+       grid-area: slider;
+       height: 175px;
+       margin-right: 0;
+       margin-top: 0px;
+       margin-bottom: 10px;
+       .promo__slider-dots
+       {
+        left: 116px;
+    }
+}
+.promo__slider-content
+{
+   height: 100%;
+   ul
+   {
+    margin: 0 auto;
+}
+li
+{
+  gap: 8px;
+}
+img
+{
+  width: 50%;
+  margin-top: 60px;
+}
+img:last-of-type
+{
+  margin: 0;
+  width: 49%;
+  margin-bottom: 22px;
+}
+svg
+{
+  margin-top: 18px;
+}
+}
+.promo__slider-buttons
+{
    display: none;
 }
 }
@@ -547,21 +547,22 @@
           width: 57%;
           font-size: 20px;
           margin-left: 20px;
-          margin-right: 11px;
       }
       img
       {
-          width: 30%;
-          height: 75%;
-      }
-      svg
-      {
-          top: 33px;
-          left: 0;
-      }
-  }
-  .promo__bottom-sale
-  {
+        width: 27%;
+        height: 74%;
+        margin-left: 24px;
+        margin-right: 0;
+    }
+    svg
+    {
+      top: 33px;
+      left: 0;
+    }
+}
+.promo__bottom-sale
+{
    width: 100%;
    margin: 0;
    margin-bottom: 10px;
@@ -573,8 +574,8 @@
   }
   img
   {
-      width: 36%;
-      margin-right: 14px;
+        width: 36%;
+        margin-right: 19px;
   }
   svg
   {
