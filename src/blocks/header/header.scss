@@ -264,13 +264,40 @@
  }
 
  @media (max-width: 1100px) {
-
+ 	.header__top-list
+ 	{
+ 		.header__top-contacts
+ 		{
+ 			// display: none;
+ 		}
+ 	}
+ 	.header__top
+ 	{
+ 		.container
+ 		{
+ 			padding-left: 20px;
+ 			padding-right: 20px;
+ 		}
+ 	}
  }
  @media (max-width: 992px) {
  	.header__bottom-useroption,
- 	.header__top-menu
  	{
  		display: none;
+ 	}
+ 	.header__top-list
+ 	{
+ 		.header__top-contacts
+ 		{
+ 			display: none;
+ 		}
+ 	}
+ 	.header__top
+ 	{
+ 		.container
+ 		{
+ 			padding-left: 20px;
+ 		}
  	}
  	.header__bottom-search
  	{
@@ -282,8 +309,9 @@
  	}
  	.header__bottom-search-button
  	{
- 		right: 33.7%;
- 		width: 12%;
+ 		right: 24.7%;
+    	padding-right: 8px;
+    	width: 13%;
  	}
 
  }

@@ -197,7 +197,7 @@
 		display: block;
 			// margin-left: 20px;
 			font-weight: normal;
-			margin-bottom: 7px;
+			margin-bottom: 6px;
 			font-size: 12px;
 			line-height: 15px;
 			color: rgba(28, 41, 77, 0.5);
@@ -209,7 +209,7 @@
 				display: none;
 			}
 			display: block;
-			margin-bottom: 8px;
+			margin-bottom: 9px;
 			width: 92%;
 			font-weight: 500;
 			font-size: 14px;
@@ -256,6 +256,7 @@
 			.catalog__book-redprice
 			{
 				display: inline-block;
+				padding-right: 4px;
 				color: #FD3A3A;
 				font-family: Roboto;
 				font-style: normal;
@@ -266,6 +267,7 @@
 			.catalog__book-litprice
 			{
 				position: relative;
+				padding-right: 3px;
 				color: #1C294D80;
 				font-family: Roboto;
 				font-style: normal;

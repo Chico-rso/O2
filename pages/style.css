@@ -1641,7 +1641,7 @@ li.L9 {
 .catalog__book .catalog__book-name {
   display: block;
   font-weight: normal;
-  margin-bottom: 7px;
+  margin-bottom: 6px;
   font-size: 12px;
   line-height: 15px;
   color: rgba(28, 41, 77, 0.5);
@@ -1649,7 +1649,7 @@ li.L9 {
 
 .catalog__book .catalog__book-description {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
   width: 92%;
   font-weight: 500;
   font-size: 14px;
@@ -1703,6 +1703,7 @@ li.L9 {
 
 .catalog__book .catalog__price-conteiner .catalog__book-redprice {
   display: inline-block;
+  padding-right: 4px;
   color: #FD3A3A;
   font-family: Roboto;
   font-style: normal;
@@ -1713,6 +1714,7 @@ li.L9 {
 
 .catalog__book .catalog__price-conteiner .catalog__book-litprice {
   position: relative;
+  padding-right: 3px;
   color: #1C294D80;
   font-family: Roboto;
   font-style: normal;
@@ -2112,7 +2114,7 @@ li.L9 {
 .catalog__book .catalog__book-name {
   display: block;
   font-weight: normal;
-  margin-bottom: 7px;
+  margin-bottom: 6px;
   font-size: 12px;
   line-height: 15px;
   color: rgba(28, 41, 77, 0.5);
@@ -2120,7 +2122,7 @@ li.L9 {
 
 .catalog__book .catalog__book-description {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
   width: 92%;
   font-weight: 500;
   font-size: 14px;
@@ -2174,6 +2176,7 @@ li.L9 {
 
 .catalog__book .catalog__price-conteiner .catalog__book-redprice {
   display: inline-block;
+  padding-right: 4px;
   color: #FD3A3A;
   font-family: Roboto;
   font-style: normal;
@@ -2184,6 +2187,7 @@ li.L9 {
 
 .catalog__book .catalog__price-conteiner .catalog__book-litprice {
   position: relative;
+  padding-right: 3px;
   color: #1C294D80;
   font-family: Roboto;
   font-style: normal;
@@ -2516,7 +2520,7 @@ li.L9 {
 }
 
 .social-link a:nth-child(2) {
-  padding-left: 10px;
+  padding-left: 12px;
 }
 
 .footer__top-items {
@@ -2621,6 +2625,28 @@ li.L9 {
   margin-bottom: 38px;
 }
 
+.footer__nav-list .footer__nav-items--grid li {
+  display: grid;
+  grid-template-columns: 23px 141px;
+  grid-template-areas: "svg a" "svg span";
+  width: 100%;
+}
+
+.footer__nav-list .footer__nav-items--grid li svg {
+  grid-area: svg;
+  display: block  !important;
+}
+
+.footer__nav-list .footer__nav-items--grid li span {
+  grid-area: span;
+  padding-left: 10px;
+}
+
+.footer__nav-list .footer__nav-items--grid li a {
+  grid-area: a;
+  padding-left: 10px;
+}
+
 .footer__nav-list .footer__nav-items h3 {
   width: 165px;
   margin: 0;
@@ -2657,9 +2683,21 @@ li.L9 {
   padding-bottom: 9px;
 }
 
+.footer__nav-list .footer__nav-items:last-child li svg {
+  margin-right: 6px;
+}
+
+.footer__nav-list .footer__nav-items:not(:last-child) svg {
+  display: none;
+}
+
 /**
  *. footer__bottom
  */
+
+.footer__bottom-doc {
+  padding-bottom: 8px;
+}
 
 .footer__bottom-nav {
   width: 100%;
@@ -2691,7 +2729,7 @@ li.L9 {
 }
 
 .footer__bottom-nav span:first-child {
-  margin-right: 161px;
+  margin-right: 152px;
   color: rgba(28, 41, 77, 0.5);
 }
 
@@ -2707,7 +2745,7 @@ li.L9 {
 
 .footer__bottom-nav a:first-child {
   padding-left: 10px;
-  padding-right: 26px;
+  padding-right: 27px;
 }
 
 /* pages */
@@ -2734,6 +2772,11 @@ html {
 @media (max-width: 1100px) {
   .container {
     padding: 0 25px;
+  }
+
+  .header__top .container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .promo__wraper-slider-block .promo__bottom-delivery {
@@ -2822,9 +2865,16 @@ html {
     padding: 0 20px;
   }
 
-  .header__bottom-useroption,
-  .header__top-menu {
+  .header__bottom-useroption {
     display: none;
+  }
+
+  .header__top-list .header__top-contacts {
+    display: none;
+  }
+
+  .header__top .container {
+    padding-left: 20px;
   }
 
   .header__bottom-search {
@@ -2836,8 +2886,9 @@ html {
   }
 
   .header__bottom-search-button {
-    right: 33.7%;
-    width: 12%;
+    right: 24.7%;
+    padding-right: 8px;
+    width: 13%;
   }
 
   .promotions--mobile {
@@ -2929,6 +2980,24 @@ html {
 
   .footer__top-input {
     margin-right: 20px;
+  }
+
+  .footer__bottom-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .footer__bottom-nav .footer__bottom-doc {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
   }
 
   .footer__nav-list {
@@ -3584,25 +3653,6 @@ html {
     width: 100%;
   }
 
-  .footer__nav-list .footer__nav-items--grid li {
-    display: grid;
-    grid-template-columns: 23px 131px;
-    grid-template-areas: "svg a span" "svg a span";
-    width: 100%;
-  }
-
-  .footer__nav-list .footer__nav-items--grid li svg {
-    grid-area: svg;
-  }
-
-  .footer__nav-list .footer__nav-items--grid li span {
-    grid-area: span;
-  }
-
-  .footer__nav-list .footer__nav-items--grid li a {
-    grid-area: a;
-  }
-
   .footer__nav-list .footer__nav-items h3 {
     display: inline-block;
     position: relative;
@@ -3653,7 +3703,7 @@ html {
     width: 100%;
     padding-left: 10px;
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 16px;
     border-bottom: 1px solid rgba(42, 61, 72, 0.15);
     font-size: 14px;
     line-height: 20px;
@@ -3663,10 +3713,11 @@ html {
     content: '';
     background-image: url("/svg/Icon-places.svg");
     display: inline-block;
+    margin-right: 5px;
     height: 20px;
     width: 20px;
     background-repeat: no-repeat;
-    background-position-x: 3px;
+    background-position-x: 4px;
     background-position-y: 3px;
   }
 
@@ -3700,6 +3751,10 @@ html {
     line-height: 16px;
   }
 
+  .footer__bottom-mobile a:first-child svg {
+    margin-right: 5px;
+  }
+
   .footer__bottom-mobile a:last-child {
     width: 100%;
     -webkit-box-ordinal-group: 0;
@@ -3708,11 +3763,15 @@ html {
     order: -1;
     padding: 0;
     padding-left: 10px;
-    padding-top: 22px;
+    padding-top: 18px;
     padding-bottom: 22px;
     border-bottom: 1px solid rgba(42, 61, 72, 0.15);
     font-size: 14px;
     line-height: 16px;
+  }
+
+  .footer__bottom-mobile a:last-child svg {
+    margin-right: 4px;
   }
 
   .footer__bottom-doc {
@@ -3730,7 +3789,7 @@ html {
     padding: 0;
     padding-left: 10px;
     padding-bottom: 10px;
-    margin-top: 20px;
+    margin-top: 18px;
     font-size: 14px;
     line-height: 20px;
   }
@@ -3738,8 +3797,9 @@ html {
   .footer__bottom-doc a:last-child {
     display: block;
     padding: 0;
+    padding-top: 8px;
     padding-left: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 14px;
     font-size: 14px;
     line-height: 20px;
   }
