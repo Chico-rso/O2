@@ -27,7 +27,6 @@
  	align-items: center;
     grid-area: slider;
     position: relative;
-    // width: 750px;
     height: 350px;
     background: #CCFF90;
     border-radius: 5px;
@@ -50,6 +49,15 @@
         {
             vertical-align: middle;
         }
+}
+.slider-wraper
+{
+    width: 300px;
+    overflow: hidden;
+    ul
+    {
+        display: flex;
+    }
 }
 .button-next
 {
@@ -279,6 +287,8 @@ ol
  		}
         img
         {
+            width: 97.78px;
+            height: 100px;
             margin-right: 25px;
         }
         span
@@ -541,12 +551,12 @@ ol
      margin-bottom: 10px;
      h3
      {
-      width: 57%;
       font-size: 20px;
       margin-left: 20px;
   }
   img
   {
+    object-fit: contain;
     width: 27%;
     height: 74%;
     margin-left: 24px;
@@ -571,6 +581,7 @@ svg
 }
 img
 {
+    object-fit: contain;
     width: 36%;
     margin-right: 19px;
 }

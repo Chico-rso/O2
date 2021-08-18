@@ -1100,6 +1100,18 @@ li.L9 {
   vertical-align: middle;
 }
 
+.promo__slider .slider-wraper {
+  width: 300px;
+  overflow: hidden;
+}
+
+.promo__slider .slider-wraper ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .promo__slider .button-next {
   position: absolute;
   width: 40px;
@@ -1371,6 +1383,8 @@ li.L9 {
 }
 
 .promo__bottom .promo__bottom-delivery img {
+  width: 97.78px;
+  height: 100px;
   margin-right: 25px;
 }
 
@@ -2866,6 +2880,10 @@ html {
     padding-top: 0;
   }
 
+  .news__list .news__item:nth-child(2) {
+    border-right: 0;
+  }
+
   .footer__bottom-nav span:first-child {
     margin-right: 50px;
   }
@@ -2978,15 +2996,8 @@ html {
     display: none;
   }
 
-  .news__list .news__item:not(:last-child) {
-    margin-right: 0;
-    padding-right: 0;
-  }
-
-  .news__list .news__item:not(:nth-last-child(2)) {
-    margin-right: 35px;
-    border-right: 1px solid rgba(28, 41, 77, 0.15);
-    padding-right: 35px;
+  .news__list .news__item:nth-child(2) {
+    border-right: 0;
   }
 
   .footer__top-input {
@@ -3068,7 +3079,7 @@ html {
   .header__search-mobile {
     display: block;
     position: relative;
-    width: 53%;
+    width: 70%;
     margin-top: 7px;
     margin-bottom: 15px;
   }
@@ -3236,12 +3247,13 @@ html {
   }
 
   .promo__wraper .promo__bottom .promo__bottom-delivery h3 {
-    width: 57%;
     font-size: 20px;
     margin-left: 20px;
   }
 
   .promo__wraper .promo__bottom .promo__bottom-delivery img {
+    -o-object-fit: contain;
+    object-fit: contain;
     width: 27%;
     height: 74%;
     margin-left: 24px;
@@ -3266,6 +3278,8 @@ html {
   }
 
   .promo__wraper .promo__bottom .promo__bottom-sale img {
+    -o-object-fit: contain;
+    object-fit: contain;
     width: 36%;
     margin-right: 19px;
   }
@@ -3304,7 +3318,6 @@ html {
 
   .catalog__book img {
     margin: 0 auto;
-    height: 180px;
   }
 
   .catalog__book.none {
@@ -3425,7 +3438,6 @@ html {
 
   .catalog__book img {
     margin: 0 auto;
-    height: 180px;
   }
 
   .catalog__book.none {
