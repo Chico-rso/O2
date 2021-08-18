@@ -49,6 +49,7 @@
 	height: 40px;
 	padding-left: 13px;
 	padding-bottom: 4px;
+	padding-top: 10px;
 	background: #FFFFFF;
 	border: 1px solid rgba(40, 47, 54, 0.15);
 	box-sizing: border-box;
@@ -73,6 +74,10 @@
 	background-color: #FF5C00;
 	border-style: none;
 	border-radius: 0 5px 5px 0;
+	svg
+	{
+		vertical-align: middle;
+	}
 }
 
 /**

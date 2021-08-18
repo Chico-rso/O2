@@ -32,13 +32,13 @@
 								</li>
 							</ul>
 						</div>
+						<ol class="promo__slider-dots">
+							<li class="dot _dot" onclick="o2.promotions.showSlides(1)"></li>
+							<li class="dot _dot" onclick="o2.promotions.showSlides(2)"></li>
+							<li class="dot _dot" onclick="o2.promotions.showSlides(3)"></li>
+							<li class="dot _dot" onclick="o2.promotions.showSlides(4)"></li>
+						</ol>
 					</div>
-					<ol class="promo__slider-dots">
-						<li class="dot _dot" onclick="o2.promotions.showSlides(1)"></li>
-						<li class="dot _dot" onclick="o2.promotions.showSlides(2)"></li>
-						<li class="dot _dot" onclick="o2.promotions.showSlides(3)"></li>
-						<li class="dot _dot" onclick="o2.promotions.showSlides(4)"></li>
-					</ol>
 				</div>
 			</div>
 			<div class="promo__bottom">
@@ -49,7 +49,7 @@
 				<div class="promo__bottom-sale">
 					<h3>Скидка <br> при регистрации <br> <span>до 15%</span></h3>
 					{# {% include '../../assets/svg/blue-line.svg' %}
-					#}						<img src="/img/bottom-sale.png" alt="sale">
+					#}<img src="/img/bottom-sale.png" alt="sale">
 				</div>
 			</div>
 			<div class="promo__bookday">
@@ -58,9 +58,9 @@
 					<span class="promo__bookday-timer">08:56:31</span>
 				</div>
 				<div class="promo__bookday-bottom">
-					<img src="/img/Roi.png" alt="book of the day">
+					<a href="#"><img src="/img/Roi.png" alt="book of the day"></a>
 					<span class="promo__bookday-name">Корпоративное право</span>
-					<h3 class="promo__bookday-description">Инвестирование: способы, риски, субъекты : монография</h3>
+					<h3 class="promo__bookday-description"><a href="#">Инвестирование: способы, риски, субъекты : монография</a></h3>
 					<span class="promo__bookday-author">Майфат А.В.</span>
 					<span class="promo__bookday-price">4 450 ₽ </span>
 				</div>
@@ -78,87 +78,7 @@
 	</div>
 </section>
 
-<!-- <section class="promotions--mobile">
-	<div class="container">
-		<div class="promo__wraper">
-			<div class="promo__wraper-slider-block">
-				<div class="promo__slider">
-				<div class="promo__slider-buttons">
-					<button class="button-prev" onclick="o2.promotions.plusSlides(-1)">
-						{% include '../../assets/svg/arrow-left.svg' %}
-					</button>
-					<button class="button-next" onclick="o2.promotions.plusSlides(1)">
-						{% include '../../assets/svg/arrow-right.svg' %}
-					</button>
-				</div>
-					<div class="promo__slider-content">
-						<ul>
-							<li class="slider-item">
-								<img src="/img/2=3.png" alt="2=3">
-								<img src="/img/на все книги.png" alt="">
-							</li>
-							<li class="slider-item">
-								<img src="/img/2=3.png" alt="2=3">
-								<img src="/img/на все книги.png" alt="">
-							</li>
-							<li class="slider-item">
-								<img src="/img/2=3.png" alt="2=3">
-								<img src="/img/на все книги.png" alt="">
-							</li>
-							<li class="slider-item">
-								<img src="/img/2=3.png" alt="2=3">
-								<img src="/img/на все книги.png" alt="">
-							</li>
-							<li class="slider-item">
-								<img src="/img/2=3.png" alt="2=3">
-								<img src="/img/на все книги.png" alt="">
-							</li>
-						</ul>
-					</div>
-					<ol class="promo__slider-dots">
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-				</div>
-				<div class="promo__bookday">
-			<div class="promo__bookday-top">
-				<h3>Книга дня</h3>
-				<span class="promo__bookday-timer">08:56:31</span>
-			</div>
-			<div class="promo__bookday-bottom">
-				<img src="/img/Roi.png" alt="book of the day">
-				<span class="promo__bookday-name">Корпоративное право</span>
-				<h3 class="promo__bookday-description">Инвестирование: способы, риски, субъекты : монография</h3>
-				<span class="promo__bookday-author">Майфат А.В.</span>
-				<span class="promo__bookday-price">4 450 ₽ </span>
-			</div>
-			<div class="button__bookday-wraper">
-				<button class="button__bookday">
-					{% include '../../assets/svg/basket-orange.svg' %}
-					<span class="promo__bookday-basket">В корзину</span>
-				</button>
-				<a class="bookday__link" href="#">
-					{% include '../../assets/svg/Icon-postponed.svg' %}
-				</a>
-			</div>
-			</div>
-				<div class="promo__bottom">
-					<div class="promo__bottom-delivery">
-						<h3>Бесплатно доставим ваш заказ при покупке от 2000 ₽</h3>
-						{% include '../../assets/svg/orange-line.svg' %}
-						<img src="/img/promo__bottom.png" alt="delivery">
-					</div>
-					<div class="promo__bottom-sale">
-						<h3>Скидка <br> при регистрации <br> до 15%</h3>
-						{% include '../../assets/svg/blue-line.svg' %}
-						<img src="/img/bottom-sale.png" alt="sale">
-					</div>
-				</div>
-			</div
-		</div>
-	</div>
-</section> -->
+
 <!-- <script type="text/javascript">
 	const slides = document.querySelectorAll('.slider-item'),
 		  prev = document.querySelector('.button-prev'),
