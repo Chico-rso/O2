@@ -1739,7 +1739,7 @@ li.L9 {
   margin-left: 22px;
 }
 
-.catalog__book:nth-child(4) .catalog__book-bottom .catalog__book-recommendation {
+.catalog__book:nth-child(4) .catalog__book-recommendation {
   width: 64%;
 }
 
@@ -2325,7 +2325,7 @@ li.L9 {
   margin-left: 22px;
 }
 
-.catalog__book:nth-child(4) .catalog__book-bottom .catalog__book-recommendation {
+.catalog__book:nth-child(4) .catalog__book-recommendation {
   width: 64%;
 }
 
@@ -3588,6 +3588,35 @@ html {
     width: 100%;
   }
 
+  .catalog__book:nth-child(1) img {
+    margin: 0;
+  }
+
+  .catalog__book:nth-child(1) .catalog__book-recommendation {
+    width: 80%;
+  }
+
+  .catalog__book:nth-child(4) img {
+    margin: 0;
+  }
+
+  .catalog__book:nth-child(4) .catalog__book-recommendation {
+    width: 80%;
+  }
+
+  .catalog__book:nth-child(4) ul {
+    left: 0;
+  }
+
+  .catalog__book:nth-child(4) .catalog__book-bottom {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  .catalog__book:nth-child(4) .catalog__book-middle {
+    margin-left: 0;
+  }
+
   .catalog__book ul {
     left: 0;
   }
@@ -3598,6 +3627,7 @@ html {
   }
 
   .catalog__book img {
+    margin: 0;
     margin: 0 auto;
   }
 
@@ -3627,6 +3657,7 @@ html {
   }
 
   .catalog__book .catalog__book-recommendation {
+    display: block;
     width: 86%;
   }
 
@@ -3708,6 +3739,35 @@ html {
     width: 100%;
   }
 
+  .catalog__book:nth-child(1) img {
+    margin: 0;
+  }
+
+  .catalog__book:nth-child(1) .catalog__book-recommendation {
+    width: 80%;
+  }
+
+  .catalog__book:nth-child(4) img {
+    margin: 0;
+  }
+
+  .catalog__book:nth-child(4) .catalog__book-recommendation {
+    width: 80%;
+  }
+
+  .catalog__book:nth-child(4) ul {
+    left: 0;
+  }
+
+  .catalog__book:nth-child(4) .catalog__book-bottom {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  .catalog__book:nth-child(4) .catalog__book-middle {
+    margin-left: 0;
+  }
+
   .catalog__book ul {
     left: 0;
   }
@@ -3718,6 +3778,7 @@ html {
   }
 
   .catalog__book img {
+    margin: 0;
     margin: 0 auto;
   }
 
@@ -3747,6 +3808,7 @@ html {
   }
 
   .catalog__book .catalog__book-recommendation {
+    display: block;
     width: 86%;
   }
 
