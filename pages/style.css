@@ -1089,27 +1089,58 @@ li.L9 {
   width: 40px;
   height: 40px;
   top: 50%;
-  left: 0;
+  left: 8px;
   -webkit-transform: translate(50%, -50%);
   -ms-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
   border-style: none;
+  z-index: 10;
 }
 
 .promo__slider .button-prev svg {
   vertical-align: middle;
 }
 
-.promo__slider .slider-wraper {
-  width: 300px;
+.promo__slider .promo__slider-content {
+  width: 100%;
+  height: 100%;
+}
+
+.promo__slider .promo__slider-wraper {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
-.promo__slider .slider-wraper ul {
+.promo__slider .promo__slider-wraper .promo__slider-list {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.promo__slider .promo__slider-wraper .promo__slider-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  min-width: 100%;
 }
 
 .promo__slider .button-next {
@@ -1117,11 +1148,12 @@ li.L9 {
   width: 40px;
   height: 40px;
   top: 50%;
-  right: 0;
+  right: 8px;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   border-style: none;
+  z-index: 10;
 }
 
 .promo__slider .button-next svg {
@@ -1148,11 +1180,11 @@ li.L9 {
   width: 26px;
   height: 3px;
   cursor: pointer;
-  opacity: 1;
+  opacity: 0.5;
 }
 
-.promo__slider ol li.opacity {
-  opacity: 0.5;
+.promo__slider ol li.active {
+  opacity: 1;
 }
 
 .promo__slider-content li {
@@ -1598,8 +1630,121 @@ li.L9 {
   width: 100%;
 }
 
-.catalog__book:not(:first-child) {
-  border-left: 1px solid #E5E5E5;
+.catalog__book .catalog__button-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog__book:nth-child(1) ul {
+  top: 22px;
+}
+
+.catalog__book:nth-child(1) img {
+  margin-left: 42px;
+  padding-bottom: 18px;
+}
+
+.catalog__book:nth-child(1) .catalog__book-description {
+  width: 80%;
+}
+
+.catalog__book:nth-child(1) .catalog__book-recommendation {
+  width: 59%;
+}
+
+.catalog__book:nth-child(1) .catalog__bookmark {
+  margin-left: 8px;
+}
+
+.catalog__book:nth-child(2) ul {
+  top: 22px;
+  left: 8px;
+}
+
+.catalog__book:nth-child(2) img {
+  margin-left: 55px;
+  padding-bottom: 16px;
+}
+
+.catalog__book:nth-child(2) .catalog__book-middle {
+  padding-left: 7px;
+}
+
+.catalog__book:nth-child(2) .catalog__book-middle .catalog__book-description {
+  width: 89%;
+}
+
+.catalog__book:nth-child(2) .catalog__book-bottom {
+  padding-left: 8px;
+}
+
+.catalog__book:nth-child(2) .catalog__bookmark {
+  margin-left: 10px;
+}
+
+.catalog__book:nth-child(3) img {
+  margin-left: 52px;
+  padding-bottom: 17px;
+}
+
+.catalog__book:nth-child(3) .catalog__book-middle {
+  margin-left: 14px;
+}
+
+.catalog__book:nth-child(3) .catalog__book-description {
+  width: 89%;
+}
+
+.catalog__book:nth-child(3) .catalog__book-bottom {
+  margin-left: 14px;
+}
+
+.catalog__book:nth-child(3) .catalog__book-recommendation {
+  width: 62%;
+}
+
+.catalog__book:nth-child(3) .catalog__bookmark {
+  margin-left: 10px;
+}
+
+.catalog__book:nth-child(4) ul {
+  top: 22px;
+  left: 23px;
+}
+
+.catalog__book:nth-child(4) img {
+  margin-left: 64px;
+  padding-bottom: 18px;
+}
+
+.catalog__book:nth-child(4) .catalog__book-description {
+  width: 90%;
+}
+
+.catalog__book:nth-child(4) .catalog__book-recommendation {
+  width: 59%;
+}
+
+.catalog__book:nth-child(4) .catalog__bookmark {
+  margin-left: 8px;
+}
+
+.catalog__book:nth-child(4) .catalog__book-middle {
+  margin-left: 22px;
+}
+
+.catalog__book:nth-child(4) .catalog__book-bottom {
+  margin-left: 22px;
+}
+
+.catalog__book:nth-child(4) .catalog__book-bottom .catalog__book-recommendation {
+  width: 64%;
+}
+
+.catalog__book:not(:last-child) {
+  border-right: 1px solid #E5E5E5;
 }
 
 .catalog__book .catalog__book-image {
@@ -1608,15 +1753,11 @@ li.L9 {
 
 .catalog__book img {
   display: block;
-  margin: 0 auto;
   padding-top: 25px;
-  padding-bottom: 14px;
 }
 
 .catalog__book ul {
   position: absolute;
-  top: 20px;
-  left: 0px;
 }
 
 .catalog__book ul li:first-child {
@@ -1799,17 +1940,23 @@ li.L9 {
 }
 
 .catalog__button-buy {
-  position: relative;
-  vertical-align: middle;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 146px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .catalog__button-buy span {
-  padding-left: 12px;
-  vertical-align: baseline;
-}
-
-.catalog__button-buy svg {
-  text-align: center;
+  margin-left: 11px;
 }
 
 .catalog__bookmark {
@@ -1863,6 +2010,7 @@ li.L9 {
 .send__email-input {
   padding-left: 15px;
   padding-top: 10px;
+  padding-bottom: 10px;
   margin-right: 10px;
   width: 418px;
   height: 40px;
@@ -2068,8 +2216,121 @@ li.L9 {
   width: 100%;
 }
 
-.catalog__book:not(:first-child) {
-  border-left: 1px solid #E5E5E5;
+.catalog__book .catalog__button-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog__book:nth-child(1) ul {
+  top: 22px;
+}
+
+.catalog__book:nth-child(1) img {
+  margin-left: 42px;
+  padding-bottom: 18px;
+}
+
+.catalog__book:nth-child(1) .catalog__book-description {
+  width: 80%;
+}
+
+.catalog__book:nth-child(1) .catalog__book-recommendation {
+  width: 59%;
+}
+
+.catalog__book:nth-child(1) .catalog__bookmark {
+  margin-left: 8px;
+}
+
+.catalog__book:nth-child(2) ul {
+  top: 22px;
+  left: 8px;
+}
+
+.catalog__book:nth-child(2) img {
+  margin-left: 55px;
+  padding-bottom: 16px;
+}
+
+.catalog__book:nth-child(2) .catalog__book-middle {
+  padding-left: 7px;
+}
+
+.catalog__book:nth-child(2) .catalog__book-middle .catalog__book-description {
+  width: 89%;
+}
+
+.catalog__book:nth-child(2) .catalog__book-bottom {
+  padding-left: 8px;
+}
+
+.catalog__book:nth-child(2) .catalog__bookmark {
+  margin-left: 10px;
+}
+
+.catalog__book:nth-child(3) img {
+  margin-left: 52px;
+  padding-bottom: 17px;
+}
+
+.catalog__book:nth-child(3) .catalog__book-middle {
+  margin-left: 14px;
+}
+
+.catalog__book:nth-child(3) .catalog__book-description {
+  width: 89%;
+}
+
+.catalog__book:nth-child(3) .catalog__book-bottom {
+  margin-left: 14px;
+}
+
+.catalog__book:nth-child(3) .catalog__book-recommendation {
+  width: 62%;
+}
+
+.catalog__book:nth-child(3) .catalog__bookmark {
+  margin-left: 10px;
+}
+
+.catalog__book:nth-child(4) ul {
+  top: 22px;
+  left: 23px;
+}
+
+.catalog__book:nth-child(4) img {
+  margin-left: 64px;
+  padding-bottom: 18px;
+}
+
+.catalog__book:nth-child(4) .catalog__book-description {
+  width: 90%;
+}
+
+.catalog__book:nth-child(4) .catalog__book-recommendation {
+  width: 59%;
+}
+
+.catalog__book:nth-child(4) .catalog__bookmark {
+  margin-left: 8px;
+}
+
+.catalog__book:nth-child(4) .catalog__book-middle {
+  margin-left: 22px;
+}
+
+.catalog__book:nth-child(4) .catalog__book-bottom {
+  margin-left: 22px;
+}
+
+.catalog__book:nth-child(4) .catalog__book-bottom .catalog__book-recommendation {
+  width: 64%;
+}
+
+.catalog__book:not(:last-child) {
+  border-right: 1px solid #E5E5E5;
 }
 
 .catalog__book .catalog__book-image {
@@ -2078,15 +2339,11 @@ li.L9 {
 
 .catalog__book img {
   display: block;
-  margin: 0 auto;
   padding-top: 25px;
-  padding-bottom: 14px;
 }
 
 .catalog__book ul {
   position: absolute;
-  top: 20px;
-  left: 0px;
 }
 
 .catalog__book ul li:first-child {
@@ -2269,17 +2526,23 @@ li.L9 {
 }
 
 .catalog__button-buy {
-  position: relative;
-  vertical-align: middle;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 146px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .catalog__button-buy span {
-  padding-left: 12px;
-  vertical-align: baseline;
-}
-
-.catalog__button-buy svg {
-  text-align: center;
+  margin-left: 11px;
 }
 
 .catalog__bookmark {
@@ -2576,7 +2839,7 @@ li.L9 {
   width: 100%;
   height: 40px;
   padding-left: 13px;
-  padding-bottom: 4px;
+  padding-bottom: 10px;
   padding-top: 10px;
   background: #FFFFFF;
   border: 1px solid rgba(40, 47, 54, 0.15);
@@ -2840,6 +3103,18 @@ html {
     left: 100px;
   }
 
+  .catalog__book-description {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    box-orient: vertical;
+  }
+
   .container {
     max-width: 1024px;
   }
@@ -2854,6 +3129,18 @@ html {
 
   .send__email-text {
     font-size: 16px;
+  }
+
+  .catalog__book-description {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    box-orient: vertical;
   }
 
   .benefits__item {
@@ -3164,14 +3451,9 @@ html {
   .promo__wraper .promo__wraper-slider-block .promo__slider {
     width: 100%;
     grid-area: slider;
-    height: 175px;
     margin-right: 0;
     margin-top: 0px;
     margin-bottom: 10px;
-  }
-
-  .promo__wraper .promo__wraper-slider-block .promo__slider-content {
-    height: 100%;
   }
 
   .promo__wraper .promo__wraper-slider-block .promo__slider-content ul {
@@ -3183,13 +3465,11 @@ html {
   }
 
   .promo__wraper .promo__wraper-slider-block .promo__slider-content img {
-    width: 50%;
     margin-top: 60px;
   }
 
   .promo__wraper .promo__wraper-slider-block .promo__slider-content img:last-of-type {
     margin: 0;
-    width: 50%;
     margin-bottom: 22px;
   }
 

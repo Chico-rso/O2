@@ -115,13 +115,135 @@
 }
 .catalog__book
 {
+	.catalog__button-flex
+	{
+		display: flex;
+	}
+	&:nth-child(1)
+	{
+		ul
+		{
+			top: 22px;
+		}
+		img
+		{
+			margin-left: 42px;
+			padding-bottom: 18px;
+		}
+		.catalog__book-description
+		{
+			width: 80%;
+		}
+		.catalog__book-recommendation
+		{
+			width: 59%;
+		}
+		.catalog__bookmark
+		{
+			margin-left: 8px;
+		}
+	}
+	&:nth-child(2)
+	{
+		ul
+		{
+			top: 22px;
+			left: 8px;
+		}
+		img
+		{
+			margin-left: 55px;
+			padding-bottom: 16px;
+		}
+		.catalog__book-middle
+		{
+			padding-left: 7px;
+			.catalog__book-description
+			{
+				width: 89%;
+			}
+		}
+		.catalog__book-bottom
+		{
+			padding-left: 8px;
+		}
+		.catalog__bookmark
+		{
+			margin-left: 10px;
+		}
+	}
+	&:nth-child(3)
+	{
+		img
+		{
+			margin-left: 52px;
+			padding-bottom: 17px;
+		}
+		.catalog__book-middle
+		{
+			margin-left: 14px;
+		}
+		.catalog__book-description
+		{
+			width: 89%;
+		}
+		.catalog__book-bottom
+		{
+			margin-left: 14px;
+		}
+		.catalog__book-recommendation
+		{
+			width: 62%;
+		}
+		.catalog__bookmark
+		{
+			margin-left: 10px;
+		}
+	}
+	&:nth-child(4)
+	{
+		ul
+		{
+			top: 22px;
+			left: 23px;
+		}
+		img
+		{
+			margin-left: 64px;
+			padding-bottom: 18px;
+		}
+		.catalog__book-description
+		{
+			width: 90%;
+		}
+		.catalog__book-recommendation
+		{
+			width: 59%;
+		}
+		.catalog__bookmark
+		{
+			margin-left: 8px;
+		}
+		.catalog__book-middle
+		{
+			margin-left: 22px;
+		}
+		.catalog__book-bottom
+		{
+			margin-left: 22px;
+			.catalog__book-recommendation
+			{
+				width: 64%;
+			}
+		}
+	}
 
 	position: relative;
 	padding-left: 20px;
 	width: 100%;
-	&:not(:first-child)
+	&:not(:last-child)
 	{
-		border-left: 1px solid #E5E5E5;
+		border-right: 1px solid #E5E5E5;
 	}
 	@extend %top-property;
 
@@ -133,15 +255,11 @@
 	img
 	{
 		display: block;
-		margin: 0 auto;
 		padding-top: 25px;
-		padding-bottom: 14px;
 	}
 	ul
 	{
 		position: absolute;
-		top: 20px;
-		left: 0px;
 		li:first-child
 		{
 			width: 86px;
@@ -322,19 +440,15 @@
 	}
 	.catalog__button-buy
 	{
-		position: relative;
-		vertical-align: middle;
-
 		@extend %button_property;
+		display: flex;
+		width: 146px;
+		justify-content: center;
+		align-items: center;
 
 		span
 		{
-			padding-left: 12px;
-			vertical-align: baseline;
-		}
-		svg
-		{
-			text-align: center;
+			margin-left: 11px;
 		}
 	}
 	.catalog__bookmark
@@ -350,8 +464,20 @@
 
 	@media (max-width: 1100px)
 	{
-
+		.catalog__book-description
+		{
+      	  overflow: hidden;
+	      text-overflow: ellipsis;
+	      display: -moz-box;
+	      -moz-box-orient: vertical;
+	      display: -webkit-box;
+	      -webkit-line-clamp: 3;
+	      -webkit-box-orient: vertical;
+	      line-clamp: 3;
+	      box-orient: vertical;
+		}
 	}
+
 	@media (max-width: 992px)
 	{
 
