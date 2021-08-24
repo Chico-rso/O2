@@ -92,7 +92,7 @@
 	}
 }
 /**
- *  Header-bottom
+ *  Header__bottom
  */
 
  .none,
@@ -402,6 +402,8 @@
  	.header__bottom-search
  	{
  		align-items: center;
+ 		justify-content: flex-start;
+ 		margin-right: auto;
  	}
  	.header__bottom-logo
  	{

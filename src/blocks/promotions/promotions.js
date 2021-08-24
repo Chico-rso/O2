@@ -5,9 +5,9 @@ o2.promotions =
 	dots: [],
 	initSlider()
 	{
-		this.slides = document.querySelectorAll('.promo__slider-item');
-		this.sliderWrapper = document.querySelector('.promo__slider-wraper');
-		this.slidesField = document.querySelector('.promo__slider-list');
+		this.slides = document.querySelectorAll('.promotions__slider-item');
+		this.sliderWrapper = document.querySelector('.promotions__slider-wraper');
+		this.slidesField = document.querySelector('.promotions__slider-list');
 		this.width = this.sliderWrapper.offsetWidth;
 		this.dots = document.querySelectorAll('._dot');
 		this.addListener();

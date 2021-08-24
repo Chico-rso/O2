@@ -1,4 +1,4 @@
-.send__email-container
+.send-email__container
 {
 	display: flex;
 	align-items: center;
@@ -8,7 +8,7 @@
 	background-color: #0288D1;
 	border-radius: 5px;
 }
-.send__email-text
+.send-email__text
 {
 	position: relative;
 	padding-left: 46px;
@@ -28,7 +28,7 @@
 		z-index: -1;
 	}
 }
-.send__email-input
+.send-email__input
 {
 	padding-left: 15px;
 	padding-top: 10px;
@@ -48,7 +48,7 @@
 		color: rgba(28, 41, 77, 0.5);
 	}
 }
-.send__email-button
+.send-email__button
 {
 	width: 137px;
 	height: 40px;
@@ -69,22 +69,22 @@
 	{
 		max-width: 1024px;
 	}
-	.send__email-input
+	.send-email__input
 	{
 		width: 360px;
 	}
-	.send__email-button
+	.send-email__button
 	{
 		width: 100px;
 	}
-	.send__email-text
+	.send-email__text
 	{
 		font-size: 16px;
 	}
 }
 @media (max-width: 992px)
  {
- 	.send__email-text
+ 	.send-email__text
  	{
  		padding-left: 20px;
  		svg
@@ -92,11 +92,11 @@
  			left: 67px;
  		}
  	}
- 	.send__email-input
+ 	.send-email__input
  	{
  		width: 40%;
  	}
- 	.send__email-button
+ 	.send-email__button
  	{
  		width: 18%;
  		margin-right: 20px;
@@ -104,14 +104,14 @@
  }
  @media (max-width: 767px)
  {
- 	.send__email-container
+ 	.send-email__container
  	{
  		flex-direction: column;
  		align-items: flex-start;
  		padding: 20px 10px;
  		margin-bottom: 10px;
  	}
- 	.send__email-text
+ 	.send-email__text
  	{
  		padding: 0;
  		width: 75%;
@@ -125,13 +125,13 @@
  			left: 55px;
  		}
  	}
- 	.send__email-input
+ 	.send-email__input
  	{
  		width: 100%;
  		margin: 0;
  		margin-bottom: 10px;
  	}
- 	.send__email-button
+ 	.send-email__button
  	{
  		margin: 0;
  		width: 100%;
