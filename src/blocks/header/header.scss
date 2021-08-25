@@ -10,10 +10,6 @@
 	height: 50px;
 	margin-bottom: 20px;
 	border-bottom: 1px solid rgba(28, 41, 77, 0.15);
-	.container
-	{
-		padding: 0px 118px 0px 113px;
-	}
 }
 .header__top-menu
 {
@@ -54,6 +50,7 @@
 	justify-content: space-between;
 	padding-top: 15px;
 	margin-bottom: 17px;
+	padding-right: 5px;
 	width: 100%;
 	margin: 0 4px;
 	.header__top-contacts
@@ -173,19 +170,25 @@
  .header__bottom-useroption-list
  {
  	display: flex;
- 	svg
- 	{
- 		margin-right: 7px;
- 		margin-left: 31px;
- 	}
+ 	gap: 30px;
  	li
  	{
  		display: flex;
  		align-items: center;
  	}
+ 	li:first-child
+ 	{
+ 		gap: 11px;
+ 		margin-left: 20px;
+ 	}
+ 	li:nth-child(2)
+ 	{
+ 		gap: 6px;
+ 	}
  	li:last-child
  	{
  		position: relative;
+ 		gap: 8px;
  		span
  		{
  			top: -8px;
@@ -207,16 +210,6 @@
  .header__bottom-useroption
  {
  	padding-bottom: 6px;
- }
- .header__bottom-useroption-list
- {
- 	li:nth-child(1)
- 	{
- 		svg
- 		{
- 			margin-right: 9px;
- 		}
- 	}
  }
  .header__bottom-useroption-link
  {

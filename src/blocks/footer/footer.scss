@@ -8,11 +8,11 @@
 {
 	display: none;
 }
-.social-link-mobile
+.footer__social-link-mobile
 {
 	display: none;
 }
-.social-link
+.footer__social-link
 {
 	a:nth-child(3)
 	{
@@ -283,7 +283,7 @@
  		margin-left: 20px;
  		padding: 24px 0 16px 0;
  	}
- 	.social-link-mobile
+ 	.footer__social-link-mobile
  	{
 
  		display: block;
@@ -299,10 +299,14 @@
  		a:nth-child(2)
  		{
  			padding-left: 10px;
+ 			svg
+			{
+				stroke: #4C75A3;
+			}
  		}
  	}
 
- 	.social-link
+ 	.foter__social-link
  	{
  		display: none;
  	}
