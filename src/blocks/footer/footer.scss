@@ -95,6 +95,7 @@
  				li
  				{
  					display: grid;
+ 					align-items: center;
  					grid-template-columns: 23px 141px;
  					grid-template-areas: "svg a"
  					"svg span";
@@ -104,6 +105,7 @@
  					{
  						grid-area: svg;
  						display: block  !important;
+ 						vertical-align: middle;
  					}
  					span
  					{
@@ -114,6 +116,7 @@
  					{
  						grid-area: a;
  						padding-left: 10px;
+ 						vertical-align: middle;
  					}
  				}
  			}
@@ -159,6 +162,7 @@
  			{
  				svg
  				{
+ 					vertical-align: middle;
  					margin-right: 6px;
  				}
  			}
@@ -418,6 +422,7 @@
  				svg
  				{
  					margin-right: 5px;
+ 					vertical-align: middle;
  				}
  			}
  			&:last-child
@@ -434,6 +439,7 @@
  				svg
  				{
  					margin-right: 4px;
+ 					vertical-align: middle;
  				}
  			}
  		}

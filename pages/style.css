@@ -2760,15 +2760,15 @@ li.L9 {
   display: none;
 }
 
-.social-link-mobile {
+.footer__social-link-mobile {
   display: none;
 }
 
-.social-link a:nth-child(3) {
+.footer__social-link a:nth-child(3) {
   padding-left: 10px;
 }
 
-.social-link a:nth-child(2) {
+.footer__social-link a:nth-child(2) {
   padding-left: 12px;
 }
 
@@ -2881,6 +2881,10 @@ li.L9 {
 
 .footer__nav-list .footer__nav-items--grid li {
   display: grid;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-template-columns: 23px 141px;
   grid-template-areas: "svg a" "svg span";
   width: 100%;
@@ -2889,6 +2893,7 @@ li.L9 {
 .footer__nav-list .footer__nav-items--grid li svg {
   grid-area: svg;
   display: block  !important;
+  vertical-align: middle;
 }
 
 .footer__nav-list .footer__nav-items--grid li span {
@@ -2899,6 +2904,7 @@ li.L9 {
 .footer__nav-list .footer__nav-items--grid li a {
   grid-area: a;
   padding-left: 10px;
+  vertical-align: middle;
 }
 
 .footer__nav-list .footer__nav-items h3 {
@@ -2938,6 +2944,7 @@ li.L9 {
 }
 
 .footer__nav-list .footer__nav-items:last-child li svg {
+  vertical-align: middle;
   margin-right: 6px;
 }
 
@@ -3915,7 +3922,7 @@ html {
     padding: 24px 0 16px 0;
   }
 
-  .social-link-mobile {
+  .footer__social-link-mobile {
     display: block;
     -webkit-box-ordinal-group: 0;
     -webkit-order: -1;
@@ -3927,19 +3934,19 @@ html {
     padding: 21px 0 8px 0;
   }
 
-  .social-link-mobile a:nth-child(3) {
+  .footer__social-link-mobile a:nth-child(3) {
     padding-left: 10px;
   }
 
-  .social-link-mobile a:nth-child(2) {
+  .footer__social-link-mobile a:nth-child(2) {
     padding-left: 10px;
   }
 
-  .social-link-mobile a:nth-child(2) svg {
+  .footer__social-link-mobile a:nth-child(2) svg {
     stroke: #4C75A3;
   }
 
-  .social-link {
+  .foter__social-link {
     display: none;
   }
 
@@ -4063,6 +4070,7 @@ html {
 
   .footer__bottom-mobile a:first-child svg {
     margin-right: 5px;
+    vertical-align: middle;
   }
 
   .footer__bottom-mobile a:last-child {
@@ -4082,6 +4090,7 @@ html {
 
   .footer__bottom-mobile a:last-child svg {
     margin-right: 4px;
+    vertical-align: middle;
   }
 
   .footer__bottom-doc {
