@@ -4016,6 +4016,7 @@ html {
     background-repeat: no-repeat;
     background-position-x: 4px;
     background-position-y: 3px;
+    vertical-align: middle;
   }
 
   .footer__bottom-mobile {
