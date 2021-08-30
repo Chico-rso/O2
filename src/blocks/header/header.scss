@@ -91,7 +91,7 @@
  *  Header__bottom
  */
 
- .none,
+ .header__burger-none,
  .header__basket-mobile,
  .header__burger-mobile,
  .header__search-mobile
@@ -256,14 +256,8 @@
  	display: none;
  }
 
- @media (max-width: 1100px) {
- 	.header__top-list
- 	{
- 		.header__top-contacts
- 		{
- 			// display: none;
- 		}
- 	}
+ @media (max-width: 1100px)
+ {
  	.header__top
  	{
  		.container

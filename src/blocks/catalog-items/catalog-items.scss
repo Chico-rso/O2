@@ -108,11 +108,11 @@
 	justify-content: space-around;
 	border-top: 1px solid #E5E5E5;
 	border-bottom: 1px solid #E5E5E5;
-	.none
+}
+.catalog-items__book--none
 	{
 		display: block;
 	}
-}
 .catalog-items__book
 {
 	.catalog-items__button-flex
@@ -141,6 +141,12 @@
 	}
 	&:nth-child(2)
 	{
+		.catalog-items__new
+			{
+				width: 70px;
+				color: #3DC47E;
+				background-color: #E2F6EC;
+			}
 		ul
 		{
 			top: 22px;
@@ -274,15 +280,9 @@
 			line-height: 10px;
 			text-align: center;
 			color: #FF4F52;
-
-		}
-		li.new
-		{
-			width: 70px;
-			color: #3DC47E;
-			background-color: #E2F6EC;
 		}
 	}
+
 	.catalog-items__book-name
 	{
 		display: block;
@@ -294,10 +294,6 @@
 	}
 	.catalog-items__book-description
 	{
-		&.mobile
-		{
-			display: none;
-		}
 		display: inline-block;
 		margin-bottom: 9px;
 		width: 100%;
@@ -317,10 +313,6 @@
 	}
 	.catalog-items__book-price
 	{
-		&.mobile
-		{
-			display: none;
-		}
 		display: block;
 		margin-bottom: 10px;
 		font-family: Roboto;
@@ -553,10 +545,6 @@
 			margin: 0;
 			margin: 0 auto;
 		}
-		&.none
-		{
-			display: none;
-		}
 		&:last-of-type
 		{
 			display: block;
@@ -585,6 +573,10 @@
 		}
 
 	}
+	.catalog-items__book--none
+		{
+			display: none;
+		}
 	.catalog-items__button-buy
 	{
 		height: 35px;

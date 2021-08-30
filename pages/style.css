@@ -806,7 +806,7 @@ li.L9 {
  *  Header__bottom
  */
 
-.none,
+.header__burger-none,
 .header__basket-mobile,
 .header__burger-mobile,
 .header__search-mobile {
@@ -1609,7 +1609,7 @@ li.L9 {
   border-bottom: 1px solid #E5E5E5;
 }
 
-.catalog-items__conteiner .none {
+.catalog-items__book--none {
   display: block;
 }
 
@@ -1641,6 +1641,12 @@ li.L9 {
 
 .catalog-items__book:nth-child(1) .catalog-items__bookmark {
   margin-left: 8px;
+}
+
+.catalog-items__book:nth-child(2) .catalog-items__new {
+  width: 70px;
+  color: #3DC47E;
+  background-color: #E2F6EC;
 }
 
 .catalog-items__book:nth-child(2) ul {
@@ -1765,12 +1771,6 @@ li.L9 {
   color: #FF4F52;
 }
 
-.catalog-items__book ul li.new {
-  width: 70px;
-  color: #3DC47E;
-  background-color: #E2F6EC;
-}
-
 .catalog-items__book .catalog-items__book-name {
   display: block;
   font-weight: normal;
@@ -1788,10 +1788,6 @@ li.L9 {
   font-size: 14px;
   line-height: 19px;
   color: #1C294D;
-}
-
-.catalog-items__book .catalog-items__book-description.mobile {
-  display: none;
 }
 
 .catalog-items__book .catalog-items__book-auhtor {
@@ -1812,10 +1808,6 @@ li.L9 {
   font-size: 18px;
   line-height: 20px;
   color: #1C294D;
-}
-
-.catalog-items__book .catalog-items__book-price.mobile {
-  display: none;
 }
 
 .catalog-items__book .catalog-items__price-conteiner {
@@ -2182,7 +2174,7 @@ li.L9 {
   border-bottom: 1px solid #E5E5E5;
 }
 
-.catalog-items__conteiner .none {
+.catalog-items__book--none {
   display: block;
 }
 
@@ -2214,6 +2206,12 @@ li.L9 {
 
 .catalog-items__book:nth-child(1) .catalog-items__bookmark {
   margin-left: 8px;
+}
+
+.catalog-items__book:nth-child(2) .catalog-items__new {
+  width: 70px;
+  color: #3DC47E;
+  background-color: #E2F6EC;
 }
 
 .catalog-items__book:nth-child(2) ul {
@@ -2338,12 +2336,6 @@ li.L9 {
   color: #FF4F52;
 }
 
-.catalog-items__book ul li.new {
-  width: 70px;
-  color: #3DC47E;
-  background-color: #E2F6EC;
-}
-
 .catalog-items__book .catalog-items__book-name {
   display: block;
   font-weight: normal;
@@ -2361,10 +2353,6 @@ li.L9 {
   font-size: 14px;
   line-height: 19px;
   color: #1C294D;
-}
-
-.catalog-items__book .catalog-items__book-description.mobile {
-  display: none;
 }
 
 .catalog-items__book .catalog-items__book-auhtor {
@@ -2385,10 +2373,6 @@ li.L9 {
   font-size: 18px;
   line-height: 20px;
   color: #1C294D;
-}
-
-.catalog-items__book .catalog-items__book-price.mobile {
-  display: none;
 }
 
 .catalog-items__book .catalog-items__price-conteiner {
@@ -3597,10 +3581,6 @@ html {
     margin: 0 auto;
   }
 
-  .catalog-items__book.none {
-    display: none;
-  }
-
   .catalog-items__book:last-of-type {
     display: block;
   }
@@ -3625,6 +3605,10 @@ html {
   .catalog-items__book .catalog-items__book-recommendation {
     display: block;
     width: 86%;
+  }
+
+  .catalog-items__book--none {
+    display: none;
   }
 
   .catalog-items__button-buy {
@@ -3748,10 +3732,6 @@ html {
     margin: 0 auto;
   }
 
-  .catalog-items__book.none {
-    display: none;
-  }
-
   .catalog-items__book:last-of-type {
     display: block;
   }
@@ -3776,6 +3756,10 @@ html {
   .catalog-items__book .catalog-items__book-recommendation {
     display: block;
     width: 86%;
+  }
+
+  .catalog-items__book--none {
+    display: none;
   }
 
   .catalog-items__button-buy {
@@ -3942,7 +3926,7 @@ html {
     stroke: #4C75A3;
   }
 
-  .foter__social-link {
+  .footer__social-link {
     display: none;
   }
 
